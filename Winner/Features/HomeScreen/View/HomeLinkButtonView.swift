@@ -10,7 +10,8 @@ struct HomeLinkButtonView: View {
         Link(destination: URL(string: url)!, label: {
             HStack(spacing: 20) {
                 Image(systemName: image)
-                    .frame(width: 24, height: 24)
+                    .frame(height: 24)
+                    .font(.system(size: 20))
                     .foregroundColor(Color.theme.other.primary)
                 Text(title)
                     .font(.system(size: 15, weight: .semibold))

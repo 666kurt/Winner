@@ -24,6 +24,7 @@
 		FC78B97F2C77AFF80044DEAE /* TrainingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */; };
 		FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */; };
 		FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */; };
+		FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingScreen.swift; sourceTree = "<group>"; };
 		FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAddWorkoutView.swift; sourceTree = "<group>"; };
 		FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinkButtonView.swift; sourceTree = "<group>"; };
+		FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResetProgressButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */,
 				FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */,
+				FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
 				FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */,
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
+				FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */,
 				FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */,
 				FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,

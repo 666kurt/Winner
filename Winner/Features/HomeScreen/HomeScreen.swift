@@ -3,36 +3,55 @@ import SwiftUI
 struct HomeScreen: View {
     
     var body: some View {
-        VStack(spacing: 0) {
-            
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Start")
-                    .font(.caption)
-                Text("Now")
-                    .font(.largeTitle)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .foregroundColor(Color.theme.text.whiteText)
-            .padding(.bottom, 15)
-        
-            HomeAddWorkoutView()
-            
-            VStack(spacing: 15) {
-                HomeLinkButtonView(image: "list.clipboard.fill",
-                                   title: "Terms of use",
-                                   url: "https://google.com")
+        ZStack(alignment: .topTrailing) {
+                   
+            VStack(spacing: 0) {
                 
-                HomeLinkButtonView(image: "shield.fill",
-                                   title: "Privacy",
-                                   url: "https://google.com")
-                
-                HomeLinkButtonView(image: "ellipsis.message.fill",
-                                   title: "Contact us",
-                                   url: "https://google.com")
-            }
+                titleView
             
+                HomeAddWorkoutView()
+                
+                linksView
+                
+            }
+            .backgroundModifier()
+            
+//            Image("homeGirl")
         }
-        .backgroundModifier()
+    }
+    
+}
+
+extension HomeScreen {
+    
+    private var titleView: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Start")
+                .font(.caption)
+            Text("Now")
+                .font(.largeTitle)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .foregroundColor(Color.theme.text.whiteText)
+        .padding(.bottom, 15)
+    }
+    
+    private var linksView: some View {
+        VStack(spacing: 15) {
+            HomeLinkButtonView(image: "list.clipboard.fill",
+                               title: "Terms of use",
+                               url: "https://google.com")
+            
+            HomeLinkButtonView(image: "shield.fill",
+                               title: "Privacy",
+                               url: "https://google.com")
+            
+            HomeLinkButtonView(image: "ellipsis.message.fill",
+                               title: "Contact us",
+                               url: "https://google.com")
+            
+            HomeResetProgressButton(action: {})
+        }
     }
     
 }
