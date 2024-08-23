@@ -19,7 +19,8 @@ struct TabBarView: View {
                        selectedScreen: $selectedScreen)
             
             Spacer()
-                .frame(width: 90)
+                .frame(width: 80)
+            
             
             TabBarItem(image: "heart.fill", 
                        title: "Health",
@@ -39,7 +40,8 @@ struct TabBarView: View {
         .background(Color.theme.background.secondBackground)
         .cornerRadius(37, corners: [.topLeft, .topRight])
         .ignoresSafeArea()
-        .overlay(TabBarButton(action: {}), alignment: .top)
+        .overlay(TabBarButton(action: {}).offset(y: -15))
+        
     }
 }
 

@@ -3,11 +3,8 @@ import SwiftUI
 struct HomeScreen: View {
     
     var body: some View {
-        ZStack(alignment: .topTrailing) {
                    
             VStack(spacing: 0) {
-                
-                titleView
             
                 HomeAddWorkoutView()
                 
@@ -15,9 +12,7 @@ struct HomeScreen: View {
                 
             }
             .backgroundModifier()
-            
-//            Image("homeGirl")
-        }
+    
     }
     
 }

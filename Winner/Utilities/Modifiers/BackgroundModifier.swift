@@ -4,10 +4,13 @@ struct BackgroundModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         
-        content
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding(.horizontal, 15)
-            .background(Color.theme.background.mainBackground).ignoresSafeArea()
+        ZStack {
+            Color.theme.background.mainBackground.ignoresSafeArea()
+            
+            content
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                .padding(.horizontal, 15)
+        }
     }
 }
 

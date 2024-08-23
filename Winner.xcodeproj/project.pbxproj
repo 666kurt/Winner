@@ -25,6 +25,10 @@
 		FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */; };
 		FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */; };
 		FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */; };
+		FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9892C7881070044DEAE /* NavigationTitleView.swift */; };
+		FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */; };
+		FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B98E2C78A2510044DEAE /* HealthCardView.swift */; };
+		FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9902C78CA700044DEAE /* NewTrainingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,10 @@
 		FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAddWorkoutView.swift; sourceTree = "<group>"; };
 		FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinkButtonView.swift; sourceTree = "<group>"; };
 		FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResetProgressButton.swift; sourceTree = "<group>"; };
+		FC78B9892C7881070044DEAE /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCardView.swift; sourceTree = "<group>"; };
+		FC78B98E2C78A2510044DEAE /* HealthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCardView.swift; sourceTree = "<group>"; };
+		FC78B9902C78CA700044DEAE /* NewTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		FC78B95F2C778D890044DEAE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FC78B9882C7880EC0044DEAE /* Components */,
 				FC78B9662C779B240044DEAE /* Coordinator */,
 				FC78B9652C779B1C0044DEAE /* Modifiers */,
 				FC78B9642C779B120044DEAE /* Extensions */,
@@ -199,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B97B2C77AFD20044DEAE /* HealthScreen.swift */,
+				FC78B98D2C78A23F0044DEAE /* View */,
 			);
 			path = HealthScreen;
 			sourceTree = "<group>";
@@ -207,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */,
+				FC78B9872C787DCC0044DEAE /* View */,
 			);
 			path = TrainingScreen;
 			sourceTree = "<group>";
@@ -217,6 +228,31 @@
 				FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */,
 				FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */,
 				FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC78B9872C787DCC0044DEAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */,
+				FC78B9902C78CA700044DEAE /* NewTrainingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC78B9882C7880EC0044DEAE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B9892C7881070044DEAE /* NavigationTitleView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FC78B98D2C78A23F0044DEAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B98E2C78A2510044DEAE /* HealthCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,19 +330,23 @@
 				FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */,
 				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
+				FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */,
 				FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */,
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
 				FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */,
 				FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */,
 				FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,
+				FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */,
 				FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */,
 				FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */,
 				FC78B97F2C77AFF80044DEAE /* TrainingScreen.swift in Sources */,
 				FC78B96D2C77A3750044DEAE /* TabBarView.swift in Sources */,
 				FC78B9732C77AAB80044DEAE /* BackgroundModifier.swift in Sources */,
 				FC78B9792C77AF900044DEAE /* RadioScreen.swift in Sources */,
+				FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */,
 				FC78B9682C779B370044DEAE /* Color+extensions.swift in Sources */,
+				FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
