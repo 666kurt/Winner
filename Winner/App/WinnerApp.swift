@@ -1,17 +1,14 @@
-//
-//  WinnerApp.swift
-//  Winner
-//
-//  Created by Максим Шишлов on 22.08.2024.
-//
-
 import SwiftUI
 
 @main
 struct WinnerApp: App {
+    
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
             MainView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

@@ -3,32 +3,38 @@ import SwiftUI
 struct HomeScreen: View {
     
     var body: some View {
-                   
-            VStack(spacing: 0) {
+        
+        VStack(spacing: 0) {
             
-                HomeAddWorkoutView()
-                
-                linksView
-                
-            }
-            .backgroundModifier()
-    
+            titleImageView
+            
+            HomeAddWorkoutView()
+            
+            linksView
+            
+        }
+        .backgroundModifier()
     }
     
 }
 
 extension HomeScreen {
     
-    private var titleView: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Start")
-                .font(.caption)
-            Text("Now")
-                .font(.largeTitle)
+    private var titleImageView: some View {
+        HStack(alignment: .bottom) {
+            
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Start")
+                    .font(.caption)
+                Text("Now")
+                    .font(.largeTitle)
+            }
+            .foregroundColor(Color.theme.text.whiteText)
+            .padding(.bottom, 15)
+            
+            Image("homeGirl")
+                .frame(maxWidth: .infinity, alignment: .trailing)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .foregroundColor(Color.theme.text.whiteText)
-        .padding(.bottom, 15)
     }
     
     private var linksView: some View {

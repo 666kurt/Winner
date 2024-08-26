@@ -1,15 +1,5 @@
 import SwiftUI
 
-struct Training: Identifiable {
-    var id = UUID()
-    let name: String
-    let approaches: String
-    let repetitions: String
-    let weight: String
-    let time: String
-    let description: String
-}
-
 struct TrainingCardInfoView: View {
     let title: String
     let value: String
@@ -54,7 +44,7 @@ struct TrainingCardView: View {
                         .frame(width: 52, height: 48)
                     
                     VStack {
-                        Text(training.time)
+                        Text("15")
                         Text("Min")
                     }
                     .font(.caption)
@@ -79,7 +69,7 @@ struct TrainingCardView: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Description")
                     .font(.callout.weight(.semibold))
-                Text(training.description)
+                Text(training.details)
                     .font(.caption)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -94,12 +84,5 @@ struct TrainingCardView: View {
 }
 
 #Preview {
-    TrainingCardView(training: Training(name: "Barbell Squats",
-                                        approaches: "5",
-                                        repetitions: "8",
-                                        weight: "50",
-                                        time: "15",
-                                        description: "Maximum load on the legs and buttocks, rest time 1 min"))
-    .padding()
-    .backgroundModifier()
+    MainView()
 }

@@ -18,9 +18,20 @@ final class AppCoordinator: ObservableObject {
     
     @Published var path = Path()
     @Published var selectedScreen: Screens = .home
+    @Published var showNewTraining: Bool = false
+    @Published var showNewTask: Bool = false
     
     func switchScreen(_ screen: Screens) {
         selectedScreen = screen
+    }
+    
+    func toggleNewTraining() {
+        selectedScreen = .training
+        showNewTraining.toggle()
+    }
+    
+    func toggleNewTask() {
+        showNewTask.toggle()
     }
     
 }

@@ -29,6 +29,20 @@
 		FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */; };
 		FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B98E2C78A2510044DEAE /* HealthCardView.swift */; };
 		FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9902C78CA700044DEAE /* NewTrainingView.swift */; };
+		FC78B9C02C7C88D40044DEAE /* NewTrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9BF2C7C88D40044DEAE /* NewTrainingCardView.swift */; };
+		FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9C12C7C8D0F0044DEAE /* WinnerData.xcdatamodeld */; };
+		FC78B9C62C7C8D270044DEAE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78B9C52C7C8D270044DEAE /* CoreData.framework */; };
+		FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9C72C7C8E200044DEAE /* Training+CoreDataClass.swift */; };
+		FC78B9CA2C7C8E200044DEAE /* Training+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9C82C7C8E200044DEAE /* Training+CoreDataProperties.swift */; };
+		FC78B9CC2C7C8E760044DEAE /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9CB2C7C8E760044DEAE /* TrainingViewModel.swift */; };
+		FC78B9CE2C7C90D40044DEAE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */; };
+		FC78B9D22C7CB68F0044DEAE /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D02C7CB68F0044DEAE /* Task+CoreDataClass.swift */; };
+		FC78B9D32C7CB68F0044DEAE /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D12C7CB68F0044DEAE /* Task+CoreDataProperties.swift */; };
+		FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D52C7CB6BE0044DEAE /* HealthViewModel.swift */; };
+		FC78B9D82C7CB8540044DEAE /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D72C7CB8540044DEAE /* NewTaskView.swift */; };
+		FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */; };
+		FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */; };
+		FC78B9DE2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +69,20 @@
 		FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCardView.swift; sourceTree = "<group>"; };
 		FC78B98E2C78A2510044DEAE /* HealthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCardView.swift; sourceTree = "<group>"; };
 		FC78B9902C78CA700044DEAE /* NewTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingView.swift; sourceTree = "<group>"; };
+		FC78B9BF2C7C88D40044DEAE /* NewTrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingCardView.swift; sourceTree = "<group>"; };
+		FC78B9C22C7C8D0F0044DEAE /* WinnerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WinnerData.xcdatamodel; sourceTree = "<group>"; };
+		FC78B9C52C7C8D270044DEAE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FC78B9C72C7C8E200044DEAE /* Training+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC78B9C82C7C8E200044DEAE /* Training+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC78B9CB2C7C8E760044DEAE /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		FC78B9D02C7CB68F0044DEAE /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC78B9D12C7CB68F0044DEAE /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC78B9D52C7CB6BE0044DEAE /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		FC78B9D72C7CB8540044DEAE /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTaskRowView.swift; sourceTree = "<group>"; };
+		FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC78B9C62C7C8D270044DEAE /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +102,7 @@
 			children = (
 				FC78B94E2C778D3D0044DEAE /* Winner */,
 				FC78B94D2C778D3D0044DEAE /* Products */,
+				FC78B9C42C7C8D270044DEAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +178,9 @@
 		FC78B9612C778DBA0044DEAE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FC78B9C12C7C8D0F0044DEAE /* WinnerData.xcdatamodeld */,
+				FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */,
+				FC78B9CF2C7CB6320044DEAE /* Subclasses */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -208,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B97B2C77AFD20044DEAE /* HealthScreen.swift */,
+				FC78B9D52C7CB6BE0044DEAE /* HealthViewModel.swift */,
 				FC78B98D2C78A23F0044DEAE /* View */,
 			);
 			path = HealthScreen;
@@ -217,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */,
+				FC78B9CB2C7C8E760044DEAE /* TrainingViewModel.swift */,
 				FC78B9872C787DCC0044DEAE /* View */,
 			);
 			path = TrainingScreen;
@@ -237,6 +272,7 @@
 			children = (
 				FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */,
 				FC78B9902C78CA700044DEAE /* NewTrainingView.swift */,
+				FC78B9BF2C7C88D40044DEAE /* NewTrainingCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,8 +289,31 @@
 			isa = PBXGroup;
 			children = (
 				FC78B98E2C78A2510044DEAE /* HealthCardView.swift */,
+				FC78B9D72C7CB8540044DEAE /* NewTaskView.swift */,
+				FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FC78B9C42C7C8D270044DEAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B9C52C7C8D270044DEAE /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC78B9CF2C7CB6320044DEAE /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */,
+				FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */,
+				FC78B9D02C7CB68F0044DEAE /* Task+CoreDataClass.swift */,
+				FC78B9D12C7CB68F0044DEAE /* Task+CoreDataProperties.swift */,
+				FC78B9C72C7C8E200044DEAE /* Training+CoreDataClass.swift */,
+				FC78B9C82C7C8E200044DEAE /* Training+CoreDataProperties.swift */,
+			);
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,24 +386,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */,
 				FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */,
 				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
+				FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */,
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
 				FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */,
+				FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */,
 				FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */,
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
+				FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */,
 				FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */,
 				FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */,
+				FC78B9D22C7CB68F0044DEAE /* Task+CoreDataClass.swift in Sources */,
+				FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */,
+				FC78B9DE2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift in Sources */,
 				FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */,
+				FC78B9C02C7C88D40044DEAE /* NewTrainingCardView.swift in Sources */,
+				FC78B9CC2C7C8E760044DEAE /* TrainingViewModel.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,
 				FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */,
 				FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */,
 				FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */,
+				FC78B9D32C7CB68F0044DEAE /* Task+CoreDataProperties.swift in Sources */,
 				FC78B97F2C77AFF80044DEAE /* TrainingScreen.swift in Sources */,
+				FC78B9CA2C7C8E200044DEAE /* Training+CoreDataProperties.swift in Sources */,
 				FC78B96D2C77A3750044DEAE /* TabBarView.swift in Sources */,
 				FC78B9732C77AAB80044DEAE /* BackgroundModifier.swift in Sources */,
 				FC78B9792C77AF900044DEAE /* RadioScreen.swift in Sources */,
 				FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */,
+				FC78B9D82C7CB8540044DEAE /* NewTaskView.swift in Sources */,
+				FC78B9CE2C7C90D40044DEAE /* PersistenceController.swift in Sources */,
 				FC78B9682C779B370044DEAE /* Color+extensions.swift in Sources */,
 				FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */,
 			);
@@ -562,6 +634,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC78B9C12C7C8D0F0044DEAE /* WinnerData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC78B9C22C7C8D0F0044DEAE /* WinnerData.xcdatamodel */,
+			);
+			currentVersion = FC78B9C22C7C8D0F0044DEAE /* WinnerData.xcdatamodel */;
+			path = WinnerData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC78B9442C778D3D0044DEAE /* Project object */;
 }

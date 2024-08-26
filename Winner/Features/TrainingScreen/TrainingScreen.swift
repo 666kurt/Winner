@@ -2,59 +2,39 @@ import SwiftUI
 
 struct TrainingScreen: View {
     
-    let trainings: [Training] = [
-        Training(name: "Barbell Squats",
-                 approaches: "5",
-                 repetitions: "8",
-                 weight: "50",
-                 time: "15",
-                 description: "Maximum load on the legs and buttocks, rest time 1 min"),
-        Training(name: "Barbell Squats",
-                 approaches: "5",
-                 repetitions: "8",
-                 weight: "50",
-                 time: "15",
-                 description: "Maximum load on the legs and buttocks, rest time 1 min"),
-        Training(name: "Barbell Squats",
-                 approaches: "5",
-                 repetitions: "8",
-                 weight: "50",
-                 time: "15",
-                 description: "Maximum load on the legs and buttocks, rest time 1 min"),
-        Training(name: "Barbell Squats",
-                 approaches: "5",
-                 repetitions: "8",
-                 weight: "50",
-                 time: "15",
-                 description: "Maximum load on the legs and buttocks, rest time 1 min"),
-        Training(name: "Barbell Squats",
-                 approaches: "5",
-                 repetitions: "8",
-                 weight: "50",
-                 time: "15",
-                 description: "Maximum load on the legs and buttocks, rest time 1 min")
-    ]
+    @EnvironmentObject var coordinator: AppCoordinator
+    @EnvironmentObject var trainingViewModel: TrainingViewModel
     
     var body: some View {
         
-        VStack(spacing: 0) {
-            
-            //  Если тренировок нет
-            //  addWorkoutView
-            
-            
-            //  Если тренировки есть
-            NavigationTitleView(title: "My training", subtitle: "To reach the goal, you must first go")
-            
-            ScrollView(showsIndicators: false) {
-                LazyVStack(spacing: 14) {
-                    ForEach(trainings, id: \.id) { training in
-                        TrainingCardView(training: training)
+        ZStack {
+            if trainingViewModel.trainings.isEmpty {
+                addWorkoutView
+            } else {
+                
+                VStack(spacing: 0) {
+                    NavigationTitleView(title: "My training", subtitle: "To reach the goal, you must first go")
+                    
+                    ScrollView(showsIndicators: false) {
+                        LazyVStack(spacing: 14) {
+                            ForEach(trainingViewModel.trainings, id: \.self) { training in
+                                TrainingCardView(training: training)
+                            }
+                        }
                     }
                 }
+                .onAppear() {
+                    trainingViewModel.fetchTrainings()
+                }
             }
+            
+            if coordinator.showNewTraining {
+                NewTrainingView()
+            }
+            
         }
         .backgroundModifier()
+        
         
     }
 }
@@ -72,7 +52,7 @@ extension TrainingScreen {
                 .foregroundColor(Color.theme.text.grayText)
             
             Button {
-                // добавление тренировки
+                coordinator.toggleNewTraining()
             } label: {
                 Text("Add")
                     .fontWeight(.bold)
@@ -90,5 +70,5 @@ extension TrainingScreen {
 }
 
 #Preview {
-    TrainingScreen()
+    MainView()
 }

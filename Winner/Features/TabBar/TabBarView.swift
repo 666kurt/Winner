@@ -3,6 +3,7 @@ import SwiftUI
 struct TabBarView: View {
     
     @Binding var selectedScreen: Screens
+    @EnvironmentObject var coordinator: AppCoordinator
     
     var body: some View {
         
@@ -40,7 +41,9 @@ struct TabBarView: View {
         .background(Color.theme.background.secondBackground)
         .cornerRadius(37, corners: [.topLeft, .topRight])
         .ignoresSafeArea()
-        .overlay(TabBarButton(action: {}).offset(y: -15))
+        .overlay(TabBarButton(action: {
+            coordinator.toggleNewTraining()
+        }).offset(y: -15))
         
     }
 }
