@@ -16,7 +16,7 @@ struct NewTaskView: View {
                 .font(.title2)
                 .padding(.horizontal, 17)
                 .padding(.vertical, 7)
-                .background(Color.theme.background.secondBackground)
+                .background(Color(hex: "#3898F3"))
                 .frame(maxWidth: .infinity)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .foregroundColor(.theme.text.whiteText)

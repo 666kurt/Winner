@@ -82,6 +82,41 @@ final class HealthViewModel: ObservableObject {
         self.title = ""
     }
     
+    func deleteAllData() {
+        deleteTasks()
+        deleteHealthData()
+    }
+    
+    private func deleteTasks() {
+        let taskRequest: NSFetchRequest<NSFetchRequestResult> = Task.fetchRequest()
+        let taskDeleteRequest = NSBatchDeleteRequest(fetchRequest: taskRequest)
+        
+        do {
+            try viewContext.execute(taskDeleteRequest)
+            try viewContext.save()
+            fetchTasks()
+        } catch {
+            print("Error deleting tasks: \(error)")
+        }
+    }
+    
+    private func deleteHealthData() {
+        let healthDataRequest: NSFetchRequest<NSFetchRequestResult> = HealthData.fetchRequest()
+        let healthDataDeleteRequest = NSBatchDeleteRequest(fetchRequest: healthDataRequest)
+        
+        do {
+            try viewContext.execute(healthDataDeleteRequest)
+            try viewContext.save()
+            fetchHealthData()
+            self.height = ""
+            self.weight = ""
+            self.pulse = ""
+            self.body = ""
+        } catch {
+            print("Error deleting health data: \(error)")
+        }
+    }
+    
     private func saveContext() {
         do {
             try viewContext.save()

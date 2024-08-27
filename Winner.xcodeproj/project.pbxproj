@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A752C7E3CF200058826 /* SplashScreen.swift */; };
+		FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */; };
+		FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */; };
 		FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */; };
 		FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9512C778D3D0044DEAE /* MainView.swift */; };
 		FC78B9542C778D400044DEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC78B9532C778D400044DEAE /* Assets.xcassets */; };
@@ -43,9 +46,18 @@
 		FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */; };
 		FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */; };
 		FC78B9DE2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */; };
+		FC78B9E02C7DC7140044DEAE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DF2C7DC7140044DEAE /* AlertView.swift */; };
+		FC78B9E22C7DD1520044DEAE /* RadioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E12C7DD1520044DEAE /* RadioViewModel.swift */; };
+		FC78B9E42C7DDDEF0044DEAE /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E32C7DDDEF0044DEAE /* RadioStation.swift */; };
+		FC78B9E62C7DEA5E0044DEAE /* OrientationReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */; };
+		FC78B9E82C7E00D30044DEAE /* LocalRadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E72C7E00D30044DEAE /* LocalRadioStation.swift */; };
+		FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1A1A752C7E3CF200058826 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
 		FC78B94C2C778D3D0044DEAE /* Winner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerApp.swift; sourceTree = "<group>"; };
 		FC78B9512C778D3D0044DEAE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -83,6 +95,12 @@
 		FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTaskRowView.swift; sourceTree = "<group>"; };
 		FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC78B9DF2C7DC7140044DEAE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		FC78B9E12C7DD1520044DEAE /* RadioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewModel.swift; sourceTree = "<group>"; };
+		FC78B9E32C7DDDEF0044DEAE /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationReader.swift; sourceTree = "<group>"; };
+		FC78B9E72C7E00D30044DEAE /* LocalRadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRadioStation.swift; sourceTree = "<group>"; };
+		FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC1A1A732C7E32D200058826 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B9E32C7DDDEF0044DEAE /* RadioStation.swift */,
+				FC78B9E72C7E00D30044DEAE /* LocalRadioStation.swift */,
+				FC78B9CF2C7CB6320044DEAE /* subclasses */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC1A1A742C7E3CD600058826 /* Onboarding&Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FC1A1A752C7E3CF200058826 /* SplashScreen.swift */,
+				FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */,
+				FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */,
+			);
+			path = "Onboarding&Splash";
+			sourceTree = "<group>";
+		};
 		FC78B9432C778D3D0044DEAE = {
 			isa = PBXGroup;
 			children = (
@@ -119,9 +157,9 @@
 			children = (
 				FC78B95D2C778D5F0044DEAE /* App */,
 				FC78B95E2C778D680044DEAE /* Features */,
-				FC78B9602C778D9F0044DEAE /* Services */,
 				FC78B95F2C778D890044DEAE /* Utilities */,
 				FC78B9612C778DBA0044DEAE /* CoreData */,
+				FC1A1A732C7E32D200058826 /* Model */,
 				FC78B9552C778D400044DEAE /* Preview Content */,
 			);
 			path = Winner;
@@ -148,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B9512C778D3D0044DEAE /* MainView.swift */,
+				FC1A1A742C7E3CD600058826 /* Onboarding&Splash */,
 				FC78B96B2C77A34B0044DEAE /* TabBar */,
 				FC78B9742C77AF080044DEAE /* HomeScreen */,
 				FC78B9772C77AF7E0044DEAE /* RadioScreen */,
@@ -160,6 +199,7 @@
 		FC78B95F2C778D890044DEAE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FC78B9E92C7E236A0044DEAE /* Helpers */,
 				FC78B9882C7880EC0044DEAE /* Components */,
 				FC78B9662C779B240044DEAE /* Coordinator */,
 				FC78B9652C779B1C0044DEAE /* Modifiers */,
@@ -168,19 +208,11 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		FC78B9602C778D9F0044DEAE /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		FC78B9612C778DBA0044DEAE /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				FC78B9C12C7C8D0F0044DEAE /* WinnerData.xcdatamodeld */,
 				FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */,
-				FC78B9CF2C7CB6320044DEAE /* Subclasses */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -196,8 +228,8 @@
 		FC78B9652C779B1C0044DEAE /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				FC78B9692C77A0130044DEAE /* CornerRadius.swift */,
 				FC78B9722C77AAB80044DEAE /* BackgroundModifier.swift */,
+				FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -233,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B9782C77AF900044DEAE /* RadioScreen.swift */,
+				FC78B9E12C7DD1520044DEAE /* RadioViewModel.swift */,
 			);
 			path = RadioScreen;
 			sourceTree = "<group>";
@@ -281,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B9892C7881070044DEAE /* NavigationTitleView.swift */,
+				FC78B9DF2C7DC7140044DEAE /* AlertView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -303,7 +337,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FC78B9CF2C7CB6320044DEAE /* Subclasses */ = {
+		FC78B9CF2C7CB6320044DEAE /* subclasses */ = {
 			isa = PBXGroup;
 			children = (
 				FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */,
@@ -313,7 +347,16 @@
 				FC78B9C72C7C8E200044DEAE /* Training+CoreDataClass.swift */,
 				FC78B9C82C7C8E200044DEAE /* Training+CoreDataProperties.swift */,
 			);
-			path = Subclasses;
+			path = subclasses;
+			sourceTree = "<group>";
+		};
+		FC78B9E92C7E236A0044DEAE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */,
+				FC78B9692C77A0130044DEAE /* CornerRadius.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,17 +429,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */,
+				FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */,
 				FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */,
 				FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */,
+				FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */,
+				FC78B9E42C7DDDEF0044DEAE /* RadioStation.swift in Sources */,
 				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
 				FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */,
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
 				FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */,
 				FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */,
+				FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */,
 				FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */,
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
 				FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */,
 				FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */,
+				FC78B9E22C7DD1520044DEAE /* RadioViewModel.swift in Sources */,
 				FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */,
 				FC78B9D22C7CB68F0044DEAE /* Task+CoreDataClass.swift in Sources */,
 				FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */,
@@ -406,6 +455,7 @@
 				FC78B9CC2C7C8E760044DEAE /* TrainingViewModel.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,
 				FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */,
+				FC78B9E82C7E00D30044DEAE /* LocalRadioStation.swift in Sources */,
 				FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */,
 				FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */,
 				FC78B9D32C7CB68F0044DEAE /* Task+CoreDataProperties.swift in Sources */,
@@ -417,8 +467,10 @@
 				FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */,
 				FC78B9D82C7CB8540044DEAE /* NewTaskView.swift in Sources */,
 				FC78B9CE2C7C90D40044DEAE /* PersistenceController.swift in Sources */,
+				FC78B9E62C7DEA5E0044DEAE /* OrientationReader.swift in Sources */,
 				FC78B9682C779B370044DEAE /* Color+extensions.swift in Sources */,
 				FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */,
+				FC78B9E02C7DC7140044DEAE /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

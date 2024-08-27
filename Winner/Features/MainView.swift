@@ -13,6 +13,7 @@ struct MainView: View {
             case .home:
                 HomeScreen()
                     .environmentObject(trainingViewModel)
+                    .environmentObject(healthViewModel)
             case .radio:
                 RadioScreen()
             case .health:

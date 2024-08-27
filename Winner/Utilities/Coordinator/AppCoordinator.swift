@@ -20,6 +20,7 @@ final class AppCoordinator: ObservableObject {
     @Published var selectedScreen: Screens = .home
     @Published var showNewTraining: Bool = false
     @Published var showNewTask: Bool = false
+    @Published var showAlert: Bool = false
     
     func switchScreen(_ screen: Screens) {
         selectedScreen = screen
@@ -32,6 +33,10 @@ final class AppCoordinator: ObservableObject {
     
     func toggleNewTask() {
         showNewTask.toggle()
+    }
+    
+    func toggleAlert() {
+        showAlert.toggle()
     }
     
 }

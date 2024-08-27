@@ -2,23 +2,49 @@ import SwiftUI
 
 struct HomeScreen: View {
     
+    @EnvironmentObject var coordinator: AppCoordinator
+    @EnvironmentObject var healthViewModel: HealthViewModel
+    @EnvironmentObject var trainingViewModel: TrainingViewModel
+    @State private var isLandscape: Bool = false
+    
     var body: some View {
         
-        VStack(spacing: 0) {
-            
-            titleImageView
-            
-            HomeAddWorkoutView()
-            
-            linksView
-            
+        if isLandscape {
+            ScrollView(showsIndicators: false) {
+                content
+            }
+            .padding(.bottom, 100)
+            .backgroundModifier()
+            .orientationReader(isLandscape: $isLandscape)
+        } else {
+            content
+                .orientationReader(isLandscape: $isLandscape)
         }
-        .backgroundModifier()
+        
     }
     
 }
 
 extension HomeScreen {
+    
+    private var content: some View {
+        ZStack {
+            VStack(spacing: 0) {
+                titleImageView
+                HomeAddWorkoutView()
+                linksView
+            }
+            .backgroundModifier()
+            
+            if coordinator.showAlert {
+                AlertView(showAlert: $coordinator.showAlert,
+                          onReset: {
+                    healthViewModel.deleteAllData()
+                    trainingViewModel.deleteAllData()
+                })
+            }
+        }
+    }
     
     private var titleImageView: some View {
         HStack(alignment: .bottom) {
@@ -51,7 +77,9 @@ extension HomeScreen {
                                title: "Contact us",
                                url: "https://google.com")
             
-            HomeResetProgressButton(action: {})
+            HomeResetProgressButton(action: {
+                coordinator.toggleAlert()
+            })
         }
     }
     

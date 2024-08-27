@@ -4,9 +4,29 @@ struct TrainingScreen: View {
     
     @EnvironmentObject var coordinator: AppCoordinator
     @EnvironmentObject var trainingViewModel: TrainingViewModel
+    @State private var isLandscape: Bool = false
     
     var body: some View {
         
+        if isLandscape {
+            ScrollView(showsIndicators: false) {
+                content
+            }
+            .padding(.bottom, 100)
+            .backgroundModifier()
+            .orientationReader(isLandscape: $isLandscape)
+        } else {
+            content
+                .backgroundModifier()
+                .orientationReader(isLandscape: $isLandscape)
+        }
+        
+    }
+}
+
+extension TrainingScreen {
+    
+    private var content: some View {
         ZStack {
             if trainingViewModel.trainings.isEmpty {
                 addWorkoutView
@@ -33,13 +53,7 @@ struct TrainingScreen: View {
             }
             
         }
-        .backgroundModifier()
-        
-        
     }
-}
-
-extension TrainingScreen {
     
     private var addWorkoutView: some View {
         VStack(spacing: 8) {

@@ -14,7 +14,7 @@ struct NewTrainingCardView: View {
                 .font(.subheadline)
         }
         .padding(4)
-        .background(Color.theme.background.secondBackground)
+        .background(Color(hex: "#3898F3"))
         .frame(maxWidth: .infinity)
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }

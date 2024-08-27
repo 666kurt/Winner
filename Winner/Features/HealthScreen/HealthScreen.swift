@@ -4,8 +4,30 @@ struct HealthScreen: View {
     
     @EnvironmentObject var healthViewModel: HealthViewModel
     @EnvironmentObject var coordinator: AppCoordinator
+    @State private var isLandscape: Bool = false
     
     var body: some View {
+        
+        if isLandscape {
+            ScrollView(showsIndicators: false) {
+                content
+            }
+            .padding(.bottom, 100)
+            .backgroundModifier()
+            .orientationReader(isLandscape: $isLandscape)
+        } else {
+            content
+                .backgroundModifier()
+                .orientationReader(isLandscape: $isLandscape)
+        }
+        
+    }
+    
+}
+
+extension HealthScreen {
+    
+    private var content: some View {
         ZStack {
             VStack(spacing: 0) {
                 
@@ -28,13 +50,9 @@ struct HealthScreen: View {
             if coordinator.showNewTask {
                 NewTaskView()
             }
-        }
-        .backgroundModifier()
-    }
-    
-}
 
-extension HealthScreen {
+        }
+    }
     
     private var healthDataView: some View {
         VStack(spacing: 8) {

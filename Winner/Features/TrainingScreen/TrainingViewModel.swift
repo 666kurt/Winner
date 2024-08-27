@@ -46,6 +46,19 @@ final class TrainingViewModel: ObservableObject {
         self.description = ""
     }
     
+    func deleteAllData() {
+        let request: NSFetchRequest<NSFetchRequestResult> = Training.fetchRequest()
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
+        
+        do {
+            try viewContext.execute(deleteRequest)
+            try viewContext.save()
+            fetchTrainings()
+        } catch {
+            print("Error deleting trainings: \(error)")
+        }
+    }
+    
     private func saveContext() {
         do {
             try viewContext.save()

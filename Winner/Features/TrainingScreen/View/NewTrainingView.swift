@@ -45,7 +45,7 @@ extension NewTrainingView {
         }
         .font(.title2)
         .padding(4)
-        .background(Color.theme.background.secondBackground)
+        .background(Color(hex: "#3898F3"))
         .frame(maxWidth: .infinity)
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
@@ -69,7 +69,7 @@ extension NewTrainingView {
             TextField("", text: $trainingViewModel.description)
         }
         .padding(4)
-        .background(Color.theme.background.secondBackground)
+        .background(Color(hex: "#3898F3"))
         .frame(maxWidth: .infinity, alignment: .leading)
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
