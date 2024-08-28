@@ -8,6 +8,7 @@ final class TrainingViewModel: ObservableObject {
     @Published var repetitions: String = ""
     @Published var weight: String = ""
     @Published var description: String = ""
+    @Published var time: Int = 0
     
     @Published var trainings: [Training] = []
     
@@ -34,6 +35,7 @@ final class TrainingViewModel: ObservableObject {
         newTraining.weight = weight
         newTraining.repetitions = repetitions
         newTraining.details = description
+        newTraining.timestamp = time
         resetFields()
         saveContext()
     }
@@ -44,6 +46,7 @@ final class TrainingViewModel: ObservableObject {
         self.repetitions = ""
         self.weight = ""
         self.description = ""
+        self.time = 0
     }
     
     func deleteAllData() {

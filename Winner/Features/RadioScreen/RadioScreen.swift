@@ -15,12 +15,18 @@ struct RadioScreen: View {
         GeometryReader { geo in
             VStack(spacing: 32) {
                 
-                circleView
-                    .frame(height: geo.size.height * 0.5)
-                
-                buttonView
-                
-                sliderView
+                if radioViewModel.stations.isEmpty {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .theme.text.whiteText))
+                        .frame(maxHeight: .infinity)
+                } else {
+                    circleView
+                        .frame(height: geo.size.height * 0.5)
+                    
+                    buttonView
+                    
+                    sliderView
+                }
                 
             }
             .backgroundModifier()

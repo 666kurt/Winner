@@ -10,6 +10,7 @@
 		FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A752C7E3CF200058826 /* SplashScreen.swift */; };
 		FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */; };
 		FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */; };
+		FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */; };
 		FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */; };
 		FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9512C778D3D0044DEAE /* MainView.swift */; };
 		FC78B9542C778D400044DEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC78B9532C778D400044DEAE /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		FC1A1A752C7E3CF200058826 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
+		FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerSheet.swift; sourceTree = "<group>"; };
 		FC78B94C2C778D3D0044DEAE /* Winner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerApp.swift; sourceTree = "<group>"; };
 		FC78B9512C778D3D0044DEAE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 			children = (
 				FC78B9892C7881070044DEAE /* NavigationTitleView.swift */,
 				FC78B9DF2C7DC7140044DEAE /* AlertView.swift */,
+				FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
 				FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */,
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
+				FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */,
 				FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */,
 				FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */,
 				FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */,
@@ -607,6 +611,7 @@
 				DEVELOPMENT_TEAM = CTY44DYVYJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "№1 Winner: workout & radio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -641,6 +646,7 @@
 				DEVELOPMENT_TEAM = CTY44DYVYJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "№1 Winner: workout & radio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

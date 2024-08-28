@@ -33,7 +33,10 @@ extension TrainingScreen {
             } else {
                 
                 VStack(spacing: 0) {
-                    NavigationTitleView(title: "My training", subtitle: "To reach the goal, you must first go")
+                    NavigationTitleView(title: "My training", 
+                                        subtitle: "To reach the goal, you must first go",
+                                        haveButton: false,
+                                        action: nil)
                     
                     ScrollView(showsIndicators: false) {
                         LazyVStack(spacing: 14) {
@@ -80,7 +83,6 @@ extension TrainingScreen {
         .frame(maxHeight: .infinity)
         
     }
-    
 }
 
 #Preview {

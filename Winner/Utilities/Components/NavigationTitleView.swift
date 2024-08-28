@@ -4,12 +4,29 @@ struct NavigationTitleView: View {
     
     let title: String
     let subtitle: String
+    let haveButton: Bool
+    let action: (() -> Void)?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text(title)
-                .font(.largeTitle.weight(.bold))
-                .foregroundColor(.theme.text.whiteText)
+            HStack {
+                Text(title)
+                    .font(.largeTitle.weight(.bold))
+                    .foregroundColor(.theme.text.whiteText)
+                
+                Spacer()
+                
+                if haveButton {
+                    Button {
+                        action!()
+                    } label: {
+                        Image(systemName: "plus")
+                            .foregroundColor(.theme.text.whiteText)
+                            .font(.title2.weight(.bold))
+                    }
+                }
+                
+            }
             Text(subtitle)
                 .font(.subheadline)
                 .foregroundColor(.theme.text.grayText)
@@ -20,6 +37,6 @@ struct NavigationTitleView: View {
 }
 
 #Preview {
-    NavigationTitleView(title: "My training", subtitle: "To reach the goal, you must first go")
+    NavigationTitleView(title: "My training", subtitle: "To reach the goal, you must first go", haveButton: true, action: {})
         .backgroundModifier()
 }

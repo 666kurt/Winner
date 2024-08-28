@@ -54,7 +54,7 @@ struct AlertView: View {
             .zIndex(1)
             .frame(maxWidth: 280, alignment: .center)
             .background(
-                Color.theme.background.secondBackground
+                Color(hex: "#1F2836")
             )
             .clipShape(RoundedRectangle(cornerRadius: 14))
         }

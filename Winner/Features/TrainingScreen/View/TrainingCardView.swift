@@ -44,7 +44,7 @@ struct TrainingCardView: View {
                         .frame(width: 52, height: 48)
                     
                     VStack {
-                        Text("15")
+                        Text("\(training.timestamp)")
                         Text("Min")
                     }
                     .font(.caption)

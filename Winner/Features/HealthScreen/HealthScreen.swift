@@ -32,7 +32,11 @@ extension HealthScreen {
             VStack(spacing: 0) {
                 
                 NavigationTitleView(title: "My health",
-                                    subtitle: "9/10 of our happiness depends on health")
+                                    subtitle: "9/10 of our happiness depends on health",
+                                    haveButton: haveButton,
+                                    action: {
+                    coordinator.toggleNewTask()
+                })
                 
                 healthDataView
                 
@@ -49,6 +53,7 @@ extension HealthScreen {
             
             if coordinator.showNewTask {
                 NewTaskView()
+
             }
 
         }
@@ -102,6 +107,10 @@ extension HealthScreen {
             }
         }
         .padding(.top, 24)
+    }
+    
+    private var haveButton: Bool {
+        !healthViewModel.tasks.isEmpty
     }
 }
 

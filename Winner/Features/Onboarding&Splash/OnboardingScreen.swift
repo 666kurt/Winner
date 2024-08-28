@@ -9,18 +9,18 @@ struct OnboardingScreen: View {
         GeometryReader { geometry in
             ZStack(alignment: .bottom) {
                 
+                Color(hex: "#002235").ignoresSafeArea()
+                
                 TabView(selection: $currentTab) {
                     
                     Image("onboarding1")
                         .resizable()
                         .scaledToFill()
-                        .ignoresSafeArea()
                         .tag(0)
                     
                     Image("onboarding2")
                         .resizable()
                         .scaledToFill()
-                        .ignoresSafeArea()
                         .tag(1)
                     
                 }

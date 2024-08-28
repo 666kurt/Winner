@@ -6,22 +6,28 @@ struct NewTrainingView: View {
     @EnvironmentObject var coordinator: AppCoordinator
     
     var body: some View {
-        VStack(spacing: 12) {
-            
-            nameTextFieldView
-            
-            cardsTextFieldView
-            
-            descriptionTextFieldView
-            
-            addTrainingButtonView
-            
+        ZStack {
+            VStack(spacing: 12) {
+                
+                nameTextFieldView
+                
+                cardsTextFieldView
+                
+                descriptionTextFieldView
+                
+                addTrainingButtonView
+                
+            }
+            .padding(20)
+            .foregroundColor(.theme.text.whiteText)
+            .background(Color.theme.other.primary)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .frame(maxHeight: .infinity, alignment: .top)
+            .padding(.top, 90)
+            .sheet(isPresented: $coordinator.showTimePickerSheet) {
+                TimePickerSheet(minutes: $trainingViewModel.time)
+            }
         }
-        .padding(20)
-        .frame(maxWidth: .infinity)
-        .foregroundColor(.theme.text.whiteText)
-        .background(Color.theme.other.primary)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
     }
     
     private var isDisable: Bool {
@@ -29,37 +35,57 @@ struct NewTrainingView: View {
         !trainingViewModel.approaches.isEmpty &&
         !trainingViewModel.repetitions.isEmpty &&
         !trainingViewModel.weight.isEmpty &&
-        !trainingViewModel.description.isEmpty
+        !trainingViewModel.description.isEmpty &&
+        trainingViewModel.time != 0
     }
 }
 
 extension NewTrainingView {
     
     private var nameTextFieldView: some View {
-        ZStack(alignment: .leading) {
-            if trainingViewModel.name.isEmpty {
-                Text("Name")
+        HStack {
+            ZStack(alignment: .leading) {
+                if trainingViewModel.name.isEmpty {
+                    Text("Name")
+                }
+                TextField("", text: $trainingViewModel.name)
+                
             }
-            TextField("", text: $trainingViewModel.name)
+            .font(.title2)
+            .padding(4)
+            .background(Color(hex: "#3898F3"))
+            .frame(maxWidth: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
             
+            ZStack {
+                Image("circleArrow")
+                    .resizable()
+                    .frame(width: 52, height: 48)
+                
+                Text(trainingViewModel.time == 0
+                     ? "Time"
+                     : "\(trainingViewModel.time)\nMin")
+                    .font(.caption)
+                    .foregroundColor(.theme.text.whiteText)
+                    .multilineTextAlignment(.center)
+                    .padding(.leading, 5)
+                    .onTapGesture {
+                        coordinator.toggleSheet()
+                    }
+            }
         }
-        .font(.title2)
-        .padding(4)
-        .background(Color(hex: "#3898F3"))
-        .frame(maxWidth: .infinity)
-        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
     
     private var cardsTextFieldView: some View {
         HStack() {
             NewTrainingCardView(text: $trainingViewModel.approaches,
-                          title: "Approaches")
+                                title: "Approaches")
             
             NewTrainingCardView(text: $trainingViewModel.repetitions,
-                          title: "Repetitions")
+                                title: "Repetitions")
             
             NewTrainingCardView(text: $trainingViewModel.weight,
-                          title: "Weight")
+                                title: "Weight")
         }
     }
     
