@@ -11,6 +11,16 @@
 		FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */; };
 		FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */; };
 		FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */; };
+		FC338FCF2C8B419D00C1F809 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FC82C8B419C00C1F809 /* 1.mp3 */; };
+		FC338FD02C8B419D00C1F809 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FC92C8B419C00C1F809 /* 6.mp3 */; };
+		FC338FD12C8B419D00C1F809 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FCA2C8B419D00C1F809 /* 3.mp3 */; };
+		FC338FD22C8B419D00C1F809 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FCB2C8B419D00C1F809 /* 2.mp3 */; };
+		FC338FD32C8B419D00C1F809 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FCC2C8B419D00C1F809 /* 4.mp3 */; };
+		FC338FD42C8B419D00C1F809 /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FCD2C8B419D00C1F809 /* 7.mp3 */; };
+		FC338FD52C8B419D00C1F809 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FCE2C8B419D00C1F809 /* 5.mp3 */; };
+		FC338FD72C8B41FA00C1F809 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC338FD62C8B41FA00C1F809 /* Track.swift */; };
+		FC338FDA2C8B453000C1F809 /* TrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC338FD92C8B453000C1F809 /* TrackRowView.swift */; };
+		FC338FDC2C8B498000C1F809 /* TrackScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC338FDB2C8B498000C1F809 /* TrackScreen.swift */; };
 		FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */; };
 		FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9512C778D3D0044DEAE /* MainView.swift */; };
 		FC78B9542C778D400044DEAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC78B9532C778D400044DEAE /* Assets.xcassets */; };
@@ -23,7 +33,7 @@
 		FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9702C77A6D10044DEAE /* TabBarButton.swift */; };
 		FC78B9732C77AAB80044DEAE /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9722C77AAB80044DEAE /* BackgroundModifier.swift */; };
 		FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9752C77AF290044DEAE /* HomeScreen.swift */; };
-		FC78B9792C77AF900044DEAE /* RadioScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9782C77AF900044DEAE /* RadioScreen.swift */; };
+		FC78B9792C77AF900044DEAE /* MusicScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9782C77AF900044DEAE /* MusicScreen.swift */; };
 		FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B97B2C77AFD20044DEAE /* HealthScreen.swift */; };
 		FC78B97F2C77AFF80044DEAE /* TrainingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */; };
 		FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */; };
@@ -48,10 +58,8 @@
 		FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */; };
 		FC78B9DE2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */; };
 		FC78B9E02C7DC7140044DEAE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DF2C7DC7140044DEAE /* AlertView.swift */; };
-		FC78B9E22C7DD1520044DEAE /* RadioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E12C7DD1520044DEAE /* RadioViewModel.swift */; };
-		FC78B9E42C7DDDEF0044DEAE /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E32C7DDDEF0044DEAE /* RadioStation.swift */; };
+		FC78B9E22C7DD1520044DEAE /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E12C7DD1520044DEAE /* MusicViewModel.swift */; };
 		FC78B9E62C7DEA5E0044DEAE /* OrientationReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */; };
-		FC78B9E82C7E00D30044DEAE /* LocalRadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E72C7E00D30044DEAE /* LocalRadioStation.swift */; };
 		FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +68,16 @@
 		FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
 		FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerSheet.swift; sourceTree = "<group>"; };
+		FC338FC82C8B419C00C1F809 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		FC338FC92C8B419C00C1F809 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		FC338FCA2C8B419D00C1F809 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		FC338FCB2C8B419D00C1F809 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		FC338FCC2C8B419D00C1F809 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		FC338FCD2C8B419D00C1F809 /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
+		FC338FCE2C8B419D00C1F809 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		FC338FD62C8B41FA00C1F809 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		FC338FD92C8B453000C1F809 /* TrackRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRowView.swift; sourceTree = "<group>"; };
+		FC338FDB2C8B498000C1F809 /* TrackScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackScreen.swift; sourceTree = "<group>"; };
 		FC78B94C2C778D3D0044DEAE /* Winner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerApp.swift; sourceTree = "<group>"; };
 		FC78B9512C778D3D0044DEAE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -73,7 +91,7 @@
 		FC78B9702C77A6D10044DEAE /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		FC78B9722C77AAB80044DEAE /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
 		FC78B9752C77AF290044DEAE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		FC78B9782C77AF900044DEAE /* RadioScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioScreen.swift; sourceTree = "<group>"; };
+		FC78B9782C77AF900044DEAE /* MusicScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicScreen.swift; sourceTree = "<group>"; };
 		FC78B97B2C77AFD20044DEAE /* HealthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthScreen.swift; sourceTree = "<group>"; };
 		FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingScreen.swift; sourceTree = "<group>"; };
 		FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAddWorkoutView.swift; sourceTree = "<group>"; };
@@ -98,10 +116,8 @@
 		FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FC78B9DF2C7DC7140044DEAE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
-		FC78B9E12C7DD1520044DEAE /* RadioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewModel.swift; sourceTree = "<group>"; };
-		FC78B9E32C7DDDEF0044DEAE /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		FC78B9E12C7DD1520044DEAE /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 		FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationReader.swift; sourceTree = "<group>"; };
-		FC78B9E72C7E00D30044DEAE /* LocalRadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRadioStation.swift; sourceTree = "<group>"; };
 		FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,8 +136,7 @@
 		FC1A1A732C7E32D200058826 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC78B9E32C7DDDEF0044DEAE /* RadioStation.swift */,
-				FC78B9E72C7E00D30044DEAE /* LocalRadioStation.swift */,
+				FC338FD62C8B41FA00C1F809 /* Track.swift */,
 				FC78B9CF2C7CB6320044DEAE /* subclasses */,
 			);
 			path = Model;
@@ -135,6 +150,38 @@
 				FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */,
 			);
 			path = "Onboarding&Splash";
+			sourceTree = "<group>";
+		};
+		FC338FC52C8B416D00C1F809 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC338FC72C8B418E00C1F809 /* Music */,
+				FC78B9532C778D400044DEAE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC338FC72C8B418E00C1F809 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				FC338FC82C8B419C00C1F809 /* 1.mp3 */,
+				FC338FCB2C8B419D00C1F809 /* 2.mp3 */,
+				FC338FCA2C8B419D00C1F809 /* 3.mp3 */,
+				FC338FCC2C8B419D00C1F809 /* 4.mp3 */,
+				FC338FCE2C8B419D00C1F809 /* 5.mp3 */,
+				FC338FC92C8B419C00C1F809 /* 6.mp3 */,
+				FC338FCD2C8B419D00C1F809 /* 7.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		FC338FD82C8B451300C1F809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC338FD92C8B453000C1F809 /* TrackRowView.swift */,
+				FC338FDB2C8B498000C1F809 /* TrackScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FC78B9432C778D3D0044DEAE = {
@@ -162,6 +209,7 @@
 				FC78B95F2C778D890044DEAE /* Utilities */,
 				FC78B9612C778DBA0044DEAE /* CoreData */,
 				FC1A1A732C7E32D200058826 /* Model */,
+				FC338FC52C8B416D00C1F809 /* Resources */,
 				FC78B9552C778D400044DEAE /* Preview Content */,
 			);
 			path = Winner;
@@ -178,7 +226,6 @@
 		FC78B95D2C778D5F0044DEAE /* App */ = {
 			isa = PBXGroup;
 			children = (
-				FC78B9532C778D400044DEAE /* Assets.xcassets */,
 				FC78B94F2C778D3D0044DEAE /* WinnerApp.swift */,
 			);
 			path = App;
@@ -191,7 +238,7 @@
 				FC1A1A742C7E3CD600058826 /* Onboarding&Splash */,
 				FC78B96B2C77A34B0044DEAE /* TabBar */,
 				FC78B9742C77AF080044DEAE /* HomeScreen */,
-				FC78B9772C77AF7E0044DEAE /* RadioScreen */,
+				FC78B9772C77AF7E0044DEAE /* MusicScreen */,
 				FC78B97A2C77AFBA0044DEAE /* HealthScreen */,
 				FC78B97D2C77AFEB0044DEAE /* TrainingScreen */,
 			);
@@ -263,13 +310,14 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
-		FC78B9772C77AF7E0044DEAE /* RadioScreen */ = {
+		FC78B9772C77AF7E0044DEAE /* MusicScreen */ = {
 			isa = PBXGroup;
 			children = (
-				FC78B9782C77AF900044DEAE /* RadioScreen.swift */,
-				FC78B9E12C7DD1520044DEAE /* RadioViewModel.swift */,
+				FC78B9782C77AF900044DEAE /* MusicScreen.swift */,
+				FC78B9E12C7DD1520044DEAE /* MusicViewModel.swift */,
+				FC338FD82C8B451300C1F809 /* View */,
 			);
-			path = RadioScreen;
+			path = MusicScreen;
 			sourceTree = "<group>";
 		};
 		FC78B97A2C77AFBA0044DEAE /* HealthScreen */ = {
@@ -420,6 +468,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC338FD12C8B419D00C1F809 /* 3.mp3 in Resources */,
+				FC338FCF2C8B419D00C1F809 /* 1.mp3 in Resources */,
+				FC338FD42C8B419D00C1F809 /* 7.mp3 in Resources */,
+				FC338FD02C8B419D00C1F809 /* 6.mp3 in Resources */,
+				FC338FD22C8B419D00C1F809 /* 2.mp3 in Resources */,
+				FC338FD32C8B419D00C1F809 /* 4.mp3 in Resources */,
+				FC338FD52C8B419D00C1F809 /* 5.mp3 in Resources */,
 				FC78B9572C778D400044DEAE /* Preview Assets.xcassets in Resources */,
 				FC78B9542C778D400044DEAE /* Assets.xcassets in Resources */,
 			);
@@ -432,13 +487,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC338FDA2C8B453000C1F809 /* TrackRowView.swift in Sources */,
 				FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */,
 				FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */,
 				FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */,
 				FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */,
 				FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */,
-				FC78B9E42C7DDDEF0044DEAE /* RadioStation.swift in Sources */,
 				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
+				FC338FD72C8B41FA00C1F809 /* Track.swift in Sources */,
 				FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */,
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
 				FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */,
@@ -448,8 +504,9 @@
 				FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */,
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
 				FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */,
+				FC338FDC2C8B498000C1F809 /* TrackScreen.swift in Sources */,
 				FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */,
-				FC78B9E22C7DD1520044DEAE /* RadioViewModel.swift in Sources */,
+				FC78B9E22C7DD1520044DEAE /* MusicViewModel.swift in Sources */,
 				FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */,
 				FC78B9D22C7CB68F0044DEAE /* Task+CoreDataClass.swift in Sources */,
 				FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */,
@@ -459,7 +516,6 @@
 				FC78B9CC2C7C8E760044DEAE /* TrainingViewModel.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,
 				FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */,
-				FC78B9E82C7E00D30044DEAE /* LocalRadioStation.swift in Sources */,
 				FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */,
 				FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */,
 				FC78B9D32C7CB68F0044DEAE /* Task+CoreDataProperties.swift in Sources */,
@@ -467,7 +523,7 @@
 				FC78B9CA2C7C8E200044DEAE /* Training+CoreDataProperties.swift in Sources */,
 				FC78B96D2C77A3750044DEAE /* TabBarView.swift in Sources */,
 				FC78B9732C77AAB80044DEAE /* BackgroundModifier.swift in Sources */,
-				FC78B9792C77AF900044DEAE /* RadioScreen.swift in Sources */,
+				FC78B9792C77AF900044DEAE /* MusicScreen.swift in Sources */,
 				FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */,
 				FC78B9D82C7CB8540044DEAE /* NewTaskView.swift in Sources */,
 				FC78B9CE2C7C90D40044DEAE /* PersistenceController.swift in Sources */,
@@ -615,8 +671,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -631,7 +687,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -650,8 +706,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +722,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

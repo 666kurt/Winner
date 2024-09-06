@@ -15,7 +15,7 @@ struct MainView: View {
                     .environmentObject(trainingViewModel)
                     .environmentObject(healthViewModel)
             case .radio:
-                RadioScreen()
+                MusicScreen()
             case .health:
                 HealthScreen()
                     .environmentObject(healthViewModel)

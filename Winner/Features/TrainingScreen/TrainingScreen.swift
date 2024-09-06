@@ -12,12 +12,9 @@ struct TrainingScreen: View {
             ScrollView(showsIndicators: false) {
                 content
             }
-            .padding(.bottom, 100)
-            .backgroundModifier()
             .orientationReader(isLandscape: $isLandscape)
         } else {
             content
-                .backgroundModifier()
                 .orientationReader(isLandscape: $isLandscape)
         }
         
@@ -28,6 +25,12 @@ extension TrainingScreen {
     
     private var content: some View {
         ZStack {
+            
+            Image("trainingBG")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
             if trainingViewModel.trainings.isEmpty {
                 addWorkoutView
             } else {
@@ -46,6 +49,8 @@ extension TrainingScreen {
                         }
                     }
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                .padding(.horizontal, 15)
                 .onAppear() {
                     trainingViewModel.fetchTrainings()
                 }
@@ -81,10 +86,11 @@ extension TrainingScreen {
             }
         }
         .frame(maxHeight: .infinity)
-        
     }
 }
 
 #Preview {
-    MainView()
+    TrainingScreen()
+        .environmentObject(TrainingViewModel())
+        .environmentObject(AppCoordinator.shared)
 }

@@ -5,6 +5,8 @@ struct NewTaskView: View {
     @EnvironmentObject var healthViewModel: HealthViewModel
     @EnvironmentObject var coordinator: AppCoordinator
     
+    @State private var isVisible: Bool = false
+    
     var body: some View {
         VStack(spacing: 4) {
             
@@ -37,15 +39,28 @@ struct NewTaskView: View {
                     )
                     .clipShape(Capsule())
                     .padding(.top, 24)
-            }.disabled(disableButton)
-            
+            }
+            .disabled(disableButton)
         }
         .padding(.horizontal, 20)
         .padding(.top, 8)
         .padding(.bottom, 18)
-        .frame(maxWidth: .infinity)
         .background(Color.theme.other.primary)
         .clipShape(RoundedRectangle(cornerRadius: 20))
+        .padding(.horizontal, 15)
+        .offset(y: isVisible ? 0 : UIScreen.main.bounds.height)
+        .animation(.spring(), value: isVisible)
+        .onAppear {
+            withAnimation {
+                self.isVisible = true
+            }
+        }
+        .onDisappear {
+            withAnimation {
+                self.isVisible = false
+            }
+        }
+        .offset(y: -(UIScreen.main.bounds.height * 0.2))
     }
     
     private var disableButton: Bool {
@@ -53,8 +68,3 @@ struct NewTaskView: View {
     }
 }
 
-#Preview {
-    NewTaskView()
-        .environmentObject(HealthViewModel())
-        .padding()
-}

@@ -35,15 +35,3 @@ struct HealthTaskRowView: View {
         .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 }
-
-#Preview {
-    let context = PersistenceController.preview.container.viewContext
-    let sampleTask = Task(context: context)
-    sampleTask.title = "Make an appointment for an examination"
-    sampleTask.isCompleted = true
-    
-    return HealthTaskRowView(task: sampleTask)
-        .padding()
-        .backgroundModifier()
-        .environmentObject(HealthViewModel())
-}

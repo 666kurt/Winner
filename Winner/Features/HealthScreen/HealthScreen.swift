@@ -13,22 +13,25 @@ struct HealthScreen: View {
                 content
             }
             .padding(.bottom, 100)
-            .backgroundModifier()
             .orientationReader(isLandscape: $isLandscape)
         } else {
             content
-                .backgroundModifier()
                 .orientationReader(isLandscape: $isLandscape)
         }
         
     }
-    
 }
 
 extension HealthScreen {
     
     private var content: some View {
         ZStack {
+            
+            Image("healthBG")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
             VStack(spacing: 0) {
                 
                 NavigationTitleView(title: "My health",
@@ -50,12 +53,13 @@ extension HealthScreen {
                 healthViewModel.fetchTasks()
                 healthViewModel.fetchHealthData()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .padding(.horizontal, 15)
             
             if coordinator.showNewTask {
                 NewTaskView()
-
             }
-
+            
         }
     }
     
@@ -115,5 +119,7 @@ extension HealthScreen {
 }
 
 #Preview {
-    MainView()
+    HealthScreen()
+        .environmentObject(HealthViewModel())
+        .environmentObject(AppCoordinator.shared)
 }

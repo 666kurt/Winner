@@ -14,8 +14,8 @@ struct TabBarView: View {
                        screen: .home,
                        selectedScreen: $selectedScreen)
             
-            TabBarItem(image: "radio.fill", 
-                       title: "Radio",
+            TabBarItem(image: "beats.headphones", 
+                       title: "Music",
                        screen: .radio,
                        selectedScreen: $selectedScreen)
             
@@ -38,7 +38,7 @@ struct TabBarView: View {
         .padding(.top, 7)
         .padding(.bottom, 36)
         .padding(.horizontal, 7)
-        .background(Color.theme.background.secondBackground)
+        .background(Color(hex: "#151d2e"))
         .cornerRadius(37, corners: [.topLeft, .topRight])
         .ignoresSafeArea()
         .overlay(TabBarButton(action: {

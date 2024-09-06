@@ -84,7 +84,3 @@ struct HealthCardView: View {
         
     }
 }
-
-#Preview {
-    MainView()
-}
