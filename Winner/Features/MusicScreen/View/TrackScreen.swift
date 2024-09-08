@@ -1,27 +1,36 @@
 import SwiftUI
 
 struct TrackScreen: View {
-    
-    let track: Track
-    
+    @EnvironmentObject var musicViewModel: MusicViewModel
+
     @State private var volume: Float = 0.5
     @State private var rotateCircle1 = false
     @State private var rotateCircle2 = false
     @State private var rotateCircle3 = false
-    
+
     var body: some View {
         VStack(spacing: 15) {
+            Spacer()
             
             circleView
             
             titleView
+                .padding(.top, 20)
             
             buttonView
-            
             sliderView
             
+            Spacer()
         }
         .backgroundModifier()
+        .onAppear {
+            musicViewModel.playTrack(musicViewModel.currentTrack)
+            startRotating()
+        }
+        .onDisappear {
+            musicViewModel.stopPlaying()
+            stopRotating()
+        }
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text("Song")
@@ -30,16 +39,13 @@ struct TrackScreen: View {
             }
         }
     }
-}
-
-extension TrackScreen {
     
     private var titleView: some View {
         VStack {
-            Text(track.title)
+            Text(musicViewModel.currentTrack.title)
                 .font(.headline.weight(.semibold))
                 .foregroundColor(.white)
-            Text(track.author)
+            Text(musicViewModel.currentTrack.author)
                 .font(.footnote)
                 .foregroundColor(.theme.text.grayText)
         }
@@ -49,19 +55,20 @@ extension TrackScreen {
     private var buttonView: some View {
         HStack(spacing: 35) {
             Button(action: {
-                
+                musicViewModel.playPreviousTrack()
             }) {
                 Image(systemName: "backward.fill")
             }
-            
+
             Button(action: {
-                
+                musicViewModel.togglePlayPause()
+                musicViewModel.isPlaying ? startRotating() : stopRotating()
             }) {
-                Image(systemName: "play.fill")
+                Image(systemName: musicViewModel.isPlaying ? "pause.fill" : "play.fill")
             }
-            
+
             Button(action: {
-                
+                musicViewModel.playNextTrack()
             }) {
                 Image(systemName: "forward.fill")
             }
@@ -70,24 +77,26 @@ extension TrackScreen {
         .foregroundColor(.theme.text.whiteText)
         .padding(.bottom, 15)
     }
-    
+
     private var sliderView: some View {
         HStack(spacing: 16) {
-            
             Button {
                 volume = 0
-                
+                musicViewModel.adjustVolume(volume)
             } label: {
                 Image(systemName: "speaker.slash.fill")
                     .font(.title2)
                     .foregroundColor(.theme.text.grayText)
             }
-            
-            Slider(value: $volume, in: 0...1)
-                .accentColor(.theme.other.primary)
-            
+
+            Slider(value: $volume, in: 0...1, onEditingChanged: { _ in
+                musicViewModel.adjustVolume(volume)
+            })
+            .accentColor(.theme.other.primary)
+
             Button {
                 volume = 1
+                musicViewModel.adjustVolume(volume)
             } label: {
                 Image(systemName: "speaker.wave.2.fill")
                     .font(.title2)
@@ -95,53 +104,54 @@ extension TrackScreen {
             }
         }
     }
-    
+
     private var circleView: some View {
         ZStack {
             Image("circle1")
                 .resizable()
                 .scaledToFit()
+                .frame(width: 300, height: 300)
                 .rotationEffect(.degrees(rotateCircle1 ? 360 : 0))
-                .animation(rotateCircle1 ? Animation.linear(duration: 8).repeatForever(autoreverses: false) : .default, value: rotateCircle1)
-            
+                .animation(rotateCircle1 ? Animation.linear(duration: 8).repeatForever(autoreverses: true) : .default, value: rotateCircle1)
+
             Image("circle2")
                 .resizable()
                 .scaledToFit()
+                .frame(width: 300, height: 300)
                 .rotationEffect(.degrees(rotateCircle2 ? -360 : 0))
-                .animation(rotateCircle2 ? Animation.linear(duration: 6).repeatForever(autoreverses: false) : .default, value: rotateCircle2)
-            
+                .animation(rotateCircle2 ? Animation.linear(duration: 6).repeatForever(autoreverses: true) : .default, value: rotateCircle2)
+
             Image("circle3")
                 .resizable()
                 .scaledToFit()
+                .frame(width: 300, height: 300)
                 .rotationEffect(.degrees(rotateCircle3 ? 360 : 0))
-                .animation(rotateCircle3 ? Animation.linear(duration: 10).repeatForever(autoreverses: false) : .default, value: rotateCircle3)
-            
+                .animation(rotateCircle3 ? Animation.linear(duration: 10).repeatForever(autoreverses: true) : .default, value: rotateCircle3)
+
             Image(systemName: "headphones")
                 .resizable()
                 .frame(width: 64, height: 68)
                 .foregroundColor(.white)
         }
-        .padding(.bottom, 70)
-        .padding(.top, 30)
+        .padding(.bottom, 30)
     }
-    
-    
+
     private func startRotating() {
         rotateCircle1 = true
         rotateCircle2 = true
         rotateCircle3 = true
     }
-    
+
     private func stopRotating() {
         rotateCircle1 = false
         rotateCircle2 = false
         rotateCircle3 = false
     }
-    
 }
 
 #Preview {
-    TrackScreen(track: Track(author: "Mary Bright", title: "The Moonlight Sonata", image: "music1", file: "1.mp3"))
+    TrackScreen()
+        .environmentObject(MusicViewModel())
         .backgroundModifier()
 }
 

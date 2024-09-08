@@ -17,7 +17,8 @@ struct MusicScreen: View {
                     VStack(spacing: 15) {
                         ForEach(musicViewModel.track, id: \.id) { track in
                             NavigationLink {
-                                TrackScreen(track: track)
+                                TrackScreen()
+                                    .environmentObject(musicViewModel)
                             } label: {
                                 TrackRowView(track: track)
                             }
@@ -31,8 +32,6 @@ struct MusicScreen: View {
         
     }
 }
-
-
 
 #Preview {
     MusicScreen()
