@@ -11,8 +11,14 @@ final class MusicViewModel: ObservableObject {
         Track(author: "Sarah Green", title: "My Heart is Yours", image: "music4", file: "4.mp3"),
         Track(author: "James Brown", title: "Blue Ocean", image: "music5", file: "5.mp3"),
         Track(author: "Emily White", title: "Sunshine and Rain", image: "music6", file: "6.mp3"),
-        Track(author: "Peter Black", title: "Forever in My Dreams", image: "music7", file: "7.mp3"),
+        Track(author: "Unknown artist", title: "Forever in My Dreams", image: "music7", file: "7.mp3"),
+        Track(author: "Unknown artist", title: "I'm trying to forget you", image: "music2", file: "8.mp3"),
+        Track(author: "Unknown artist", title: "We're standing under the rain", image: "music4", file: "9.mp3"),
+        Track(author: "Unknown artist", title: "In the mountains, I found my peace", image: "music1", file: "10.mp3"),
+        Track(author: "Unknown artist", title: "I see you in the morning", image: "music5", file: "11.mp3"),
+        Track(author: "Unknown artist", title: "We're on the road", image: "music6", file: "12.mp3"),
     ]
+    
     @Published var currentTrackIndex: Int = 0
     @Published var isPlaying: Bool = false
     

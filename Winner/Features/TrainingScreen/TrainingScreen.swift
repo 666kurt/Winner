@@ -61,6 +61,9 @@ extension TrainingScreen {
             }
             
         }
+        .onTapGesture {
+            UIApplication.shared.endEditing(true)
+        }
     }
     
     private var addWorkoutView: some View {

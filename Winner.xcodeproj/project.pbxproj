@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A752C7E3CF200058826 /* SplashScreen.swift */; };
-		FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */; };
-		FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */; };
 		FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */; };
 		FC338FCF2C8B419D00C1F809 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FC82C8B419C00C1F809 /* 1.mp3 */; };
 		FC338FD02C8B419D00C1F809 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FC92C8B419C00C1F809 /* 6.mp3 */; };
@@ -61,12 +59,16 @@
 		FC78B9E22C7DD1520044DEAE /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E12C7DD1520044DEAE /* MusicViewModel.swift */; };
 		FC78B9E62C7DEA5E0044DEAE /* OrientationReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */; };
 		FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */; };
+		FC8336342C903A7900F3DA4C /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC83362F2C903A7800F3DA4C /* 11.mp3 */; };
+		FC8336352C903A7900F3DA4C /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC8336302C903A7900F3DA4C /* 10.mp3 */; };
+		FC8336362C903A7900F3DA4C /* 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC8336312C903A7900F3DA4C /* 12.mp3 */; };
+		FC8336372C903A7900F3DA4C /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC8336322C903A7900F3DA4C /* 8.mp3 */; };
+		FC8336382C903A7900F3DA4C /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC8336332C903A7900F3DA4C /* 9.mp3 */; };
+		FC83363A2C903CF700F3DA4C /* UIApplication+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8336392C903CF700F3DA4C /* UIApplication+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC1A1A752C7E3CF200058826 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
-		FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabIndicator.swift; sourceTree = "<group>"; };
 		FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerSheet.swift; sourceTree = "<group>"; };
 		FC338FC82C8B419C00C1F809 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		FC338FC92C8B419C00C1F809 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
@@ -119,6 +121,12 @@
 		FC78B9E12C7DD1520044DEAE /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 		FC78B9E52C7DEA5E0044DEAE /* OrientationReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationReader.swift; sourceTree = "<group>"; };
 		FC78B9EA2C7E23750044DEAE /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		FC83362F2C903A7800F3DA4C /* 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11.mp3; sourceTree = "<group>"; };
+		FC8336302C903A7900F3DA4C /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
+		FC8336312C903A7900F3DA4C /* 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12.mp3; sourceTree = "<group>"; };
+		FC8336322C903A7900F3DA4C /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
+		FC8336332C903A7900F3DA4C /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
+		FC8336392C903CF700F3DA4C /* UIApplication+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,14 +150,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FC1A1A742C7E3CD600058826 /* Onboarding&Splash */ = {
+		FC1A1A742C7E3CD600058826 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
 				FC1A1A752C7E3CF200058826 /* SplashScreen.swift */,
-				FC1A1A772C7E3F6600058826 /* OnboardingScreen.swift */,
-				FC1A1A792C7E3F8800058826 /* CustomTabIndicator.swift */,
 			);
-			path = "Onboarding&Splash";
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		FC338FC52C8B416D00C1F809 /* Resources */ = {
@@ -164,6 +170,11 @@
 		FC338FC72C8B418E00C1F809 /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				FC8336322C903A7900F3DA4C /* 8.mp3 */,
+				FC8336332C903A7900F3DA4C /* 9.mp3 */,
+				FC8336302C903A7900F3DA4C /* 10.mp3 */,
+				FC83362F2C903A7800F3DA4C /* 11.mp3 */,
+				FC8336312C903A7900F3DA4C /* 12.mp3 */,
 				FC338FC82C8B419C00C1F809 /* 1.mp3 */,
 				FC338FCB2C8B419D00C1F809 /* 2.mp3 */,
 				FC338FCA2C8B419D00C1F809 /* 3.mp3 */,
@@ -235,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B9512C778D3D0044DEAE /* MainView.swift */,
-				FC1A1A742C7E3CD600058826 /* Onboarding&Splash */,
+				FC1A1A742C7E3CD600058826 /* Splash */,
 				FC78B96B2C77A34B0044DEAE /* TabBar */,
 				FC78B9742C77AF080044DEAE /* HomeScreen */,
 				FC78B9772C77AF7E0044DEAE /* MusicScreen */,
@@ -270,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B9672C779B370044DEAE /* Color+extensions.swift */,
+				FC8336392C903CF700F3DA4C /* UIApplication+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -472,11 +484,16 @@
 				FC338FCF2C8B419D00C1F809 /* 1.mp3 in Resources */,
 				FC338FD42C8B419D00C1F809 /* 7.mp3 in Resources */,
 				FC338FD02C8B419D00C1F809 /* 6.mp3 in Resources */,
+				FC8336342C903A7900F3DA4C /* 11.mp3 in Resources */,
 				FC338FD22C8B419D00C1F809 /* 2.mp3 in Resources */,
 				FC338FD32C8B419D00C1F809 /* 4.mp3 in Resources */,
+				FC8336352C903A7900F3DA4C /* 10.mp3 in Resources */,
+				FC8336382C903A7900F3DA4C /* 9.mp3 in Resources */,
 				FC338FD52C8B419D00C1F809 /* 5.mp3 in Resources */,
 				FC78B9572C778D400044DEAE /* Preview Assets.xcassets in Resources */,
 				FC78B9542C778D400044DEAE /* Assets.xcassets in Resources */,
+				FC8336372C903A7900F3DA4C /* 8.mp3 in Resources */,
+				FC8336362C903A7900F3DA4C /* 12.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +509,6 @@
 				FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */,
 				FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */,
 				FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */,
-				FC1A1A7A2C7E3F8800058826 /* CustomTabIndicator.swift in Sources */,
 				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
 				FC338FD72C8B41FA00C1F809 /* Track.swift in Sources */,
 				FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */,
@@ -500,7 +516,6 @@
 				FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */,
 				FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */,
 				FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */,
-				FC1A1A782C7E3F6600058826 /* OnboardingScreen.swift in Sources */,
 				FC78B9522C778D3D0044DEAE /* MainView.swift in Sources */,
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
 				FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */,
@@ -530,6 +545,7 @@
 				FC78B9E62C7DEA5E0044DEAE /* OrientationReader.swift in Sources */,
 				FC78B9682C779B370044DEAE /* Color+extensions.swift in Sources */,
 				FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */,
+				FC83363A2C903CF700F3DA4C /* UIApplication+extensions.swift in Sources */,
 				FC78B9E02C7DC7140044DEAE /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

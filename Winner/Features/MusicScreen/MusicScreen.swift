@@ -31,6 +31,7 @@ struct MusicScreen: View {
                         }
                     }
                 }
+                .padding(.bottom, 60)
                 
             }
             .backgroundModifier()

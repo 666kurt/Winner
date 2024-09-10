@@ -61,6 +61,9 @@ extension HealthScreen {
             }
             
         }
+        .onTapGesture {
+            UIApplication.shared.endEditing(true)
+        }
     }
     
     private var healthDataView: some View {
