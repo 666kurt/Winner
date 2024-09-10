@@ -67,15 +67,15 @@ extension HomeScreen {
         VStack(spacing: 15) {
             HomeLinkButtonView(image: "list.clipboard.fill",
                                title: "Terms of use",
-                               url: "https://google.com")
+                               url: "https://www.termsfeed.com/live/8563bc48-89c4-4abc-a5e7-2b9f45375323")
             
             HomeLinkButtonView(image: "shield.fill",
                                title: "Privacy",
-                               url: "https://google.com")
+                               url: "https://www.termsfeed.com/live/d69ab979-680f-444c-a30c-8bde3fbf7f39")
             
             HomeLinkButtonView(image: "ellipsis.message.fill",
                                title: "Contact us",
-                               url: "https://google.com")
+                               url: "https://www.termsfeed.com/live/8563bc48-89c4-4abc-a5e7-2b9f45375323")
             
             HomeResetProgressButton(action: {
                 coordinator.toggleAlert()

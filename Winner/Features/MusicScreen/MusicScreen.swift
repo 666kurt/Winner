@@ -19,6 +19,12 @@ struct MusicScreen: View {
                             NavigationLink {
                                 TrackScreen()
                                     .environmentObject(musicViewModel)
+                                    .onAppear {
+                                        if let index = musicViewModel.track.firstIndex(where: { $0.id == track.id }) {
+                                            musicViewModel.currentTrackIndex = index
+                                            musicViewModel.playTrack(track)
+                                        }
+                                    }
                             } label: {
                                 TrackRowView(track: track)
                             }
