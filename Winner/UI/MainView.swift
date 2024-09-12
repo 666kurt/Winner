@@ -3,13 +3,12 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject var coordinator = AppCoordinator.shared
-    @StateObject var trainingViewModel = TrainingViewModel()
+    @StateObject var trainingViewModel = HomeViewModel()
     @StateObject var healthViewModel = HealthViewModel()
     
     var body: some View {
         ZStack(alignment: .bottom) {
-    
-            switch coordinator.selectedScreen {
+                switch coordinator.selectedScreen {
             case .home:
                 HomeScreen()
                     .environmentObject(trainingViewModel)
@@ -19,9 +18,11 @@ struct MainView: View {
             case .health:
                 HealthScreen()
                     .environmentObject(healthViewModel)
-            case .training:
-                TrainingScreen()
                     .environmentObject(trainingViewModel)
+            case .training:
+                SettingsScreen()
+                    .environmentObject(trainingViewModel)
+                    .environmentObject(healthViewModel)
             }
             
             TabBarView(selectedScreen: $coordinator.selectedScreen)

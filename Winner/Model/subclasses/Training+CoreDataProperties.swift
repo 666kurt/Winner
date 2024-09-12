@@ -1,7 +1,6 @@
 import Foundation
 import CoreData
 
-
 extension Training {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Training> {
@@ -14,7 +13,6 @@ extension Training {
     @NSManaged public var repetitions: String
     @NSManaged public var weight: String
     @NSManaged public var details: String
-    @NSManaged public var timestamp: Int
 
 }
 

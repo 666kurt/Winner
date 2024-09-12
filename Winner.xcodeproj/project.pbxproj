@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC06789C2C92EAE40003AA62 /* HomeStaticticsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06789B2C92EAE40003AA62 /* HomeStaticticsCardView.swift */; };
+		FC06789E2C92F9150003AA62 /* NewTrainingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06789D2C92F9150003AA62 /* NewTrainingSheet.swift */; };
+		FC0678A02C92F9420003AA62 /* EditTrainingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06789F2C92F9420003AA62 /* EditTrainingSheet.swift */; };
+		FC0678A22C92FB5C0003AA62 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0678A12C92FB5C0003AA62 /* TextFieldView.swift */; };
+		FC0678A52C931B5C0003AA62 /* StaticticsInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0678A42C931B5B0003AA62 /* StaticticsInputView.swift */; };
+		FC0678AC2C932EE50003AA62 /* GoalData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0678AA2C932EE50003AA62 /* GoalData+CoreDataClass.swift */; };
+		FC0678AD2C932EE50003AA62 /* GoalData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0678AB2C932EE50003AA62 /* GoalData+CoreDataProperties.swift */; };
+		FC0678AF2C93306C0003AA62 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0678AE2C93306C0003AA62 /* SettingsScreen.swift */; };
+		FC0678B22C9341270003AA62 /* EditTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0678B12C9341270003AA62 /* EditTaskSheet.swift */; };
 		FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A752C7E3CF200058826 /* SplashScreen.swift */; };
 		FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */; };
 		FC338FCF2C8B419D00C1F809 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FC338FC82C8B419C00C1F809 /* 1.mp3 */; };
@@ -28,30 +37,25 @@
 		FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9692C77A0130044DEAE /* CornerRadius.swift */; };
 		FC78B96D2C77A3750044DEAE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B96C2C77A3750044DEAE /* TabBarView.swift */; };
 		FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B96E2C77A3860044DEAE /* TabBarItem.swift */; };
-		FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9702C77A6D10044DEAE /* TabBarButton.swift */; };
 		FC78B9732C77AAB80044DEAE /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9722C77AAB80044DEAE /* BackgroundModifier.swift */; };
 		FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9752C77AF290044DEAE /* HomeScreen.swift */; };
 		FC78B9792C77AF900044DEAE /* MusicScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9782C77AF900044DEAE /* MusicScreen.swift */; };
 		FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B97B2C77AFD20044DEAE /* HealthScreen.swift */; };
-		FC78B97F2C77AFF80044DEAE /* TrainingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */; };
-		FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */; };
-		FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */; };
-		FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */; };
+		FC78B9842C77CAF30044DEAE /* SettingsLinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9832C77CAF30044DEAE /* SettingsLinkButtonView.swift */; };
+		FC78B9862C77CFA80044DEAE /* SettingsResetProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9852C77CFA80044DEAE /* SettingsResetProgressButton.swift */; };
 		FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9892C7881070044DEAE /* NavigationTitleView.swift */; };
 		FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */; };
 		FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B98E2C78A2510044DEAE /* HealthCardView.swift */; };
-		FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9902C78CA700044DEAE /* NewTrainingView.swift */; };
-		FC78B9C02C7C88D40044DEAE /* NewTrainingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9BF2C7C88D40044DEAE /* NewTrainingCardView.swift */; };
 		FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9C12C7C8D0F0044DEAE /* WinnerData.xcdatamodeld */; };
 		FC78B9C62C7C8D270044DEAE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC78B9C52C7C8D270044DEAE /* CoreData.framework */; };
 		FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9C72C7C8E200044DEAE /* Training+CoreDataClass.swift */; };
 		FC78B9CA2C7C8E200044DEAE /* Training+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9C82C7C8E200044DEAE /* Training+CoreDataProperties.swift */; };
-		FC78B9CC2C7C8E760044DEAE /* TrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9CB2C7C8E760044DEAE /* TrainingViewModel.swift */; };
+		FC78B9CC2C7C8E760044DEAE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9CB2C7C8E760044DEAE /* HomeViewModel.swift */; };
 		FC78B9CE2C7C90D40044DEAE /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */; };
 		FC78B9D22C7CB68F0044DEAE /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D02C7CB68F0044DEAE /* Task+CoreDataClass.swift */; };
 		FC78B9D32C7CB68F0044DEAE /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D12C7CB68F0044DEAE /* Task+CoreDataProperties.swift */; };
 		FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D52C7CB6BE0044DEAE /* HealthViewModel.swift */; };
-		FC78B9D82C7CB8540044DEAE /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D72C7CB8540044DEAE /* NewTaskView.swift */; };
+		FC78B9D82C7CB8540044DEAE /* NewTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D72C7CB8540044DEAE /* NewTaskSheet.swift */; };
 		FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */; };
 		FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */; };
 		FC78B9DE2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */; };
@@ -68,6 +72,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC06789B2C92EAE40003AA62 /* HomeStaticticsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStaticticsCardView.swift; sourceTree = "<group>"; };
+		FC06789D2C92F9150003AA62 /* NewTrainingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingSheet.swift; sourceTree = "<group>"; };
+		FC06789F2C92F9420003AA62 /* EditTrainingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTrainingSheet.swift; sourceTree = "<group>"; };
+		FC0678A12C92FB5C0003AA62 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		FC0678A42C931B5B0003AA62 /* StaticticsInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticticsInputView.swift; sourceTree = "<group>"; };
+		FC0678AA2C932EE50003AA62 /* GoalData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC0678AB2C932EE50003AA62 /* GoalData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoalData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC0678AE2C93306C0003AA62 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		FC0678B12C9341270003AA62 /* EditTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskSheet.swift; sourceTree = "<group>"; };
 		FC1A1A752C7E3CF200058826 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerSheet.swift; sourceTree = "<group>"; };
 		FC338FC82C8B419C00C1F809 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
@@ -90,30 +103,25 @@
 		FC78B9692C77A0130044DEAE /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		FC78B96C2C77A3750044DEAE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		FC78B96E2C77A3860044DEAE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
-		FC78B9702C77A6D10044DEAE /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		FC78B9722C77AAB80044DEAE /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
 		FC78B9752C77AF290044DEAE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		FC78B9782C77AF900044DEAE /* MusicScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicScreen.swift; sourceTree = "<group>"; };
 		FC78B97B2C77AFD20044DEAE /* HealthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthScreen.swift; sourceTree = "<group>"; };
-		FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingScreen.swift; sourceTree = "<group>"; };
-		FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAddWorkoutView.swift; sourceTree = "<group>"; };
-		FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLinkButtonView.swift; sourceTree = "<group>"; };
-		FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResetProgressButton.swift; sourceTree = "<group>"; };
+		FC78B9832C77CAF30044DEAE /* SettingsLinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkButtonView.swift; sourceTree = "<group>"; };
+		FC78B9852C77CFA80044DEAE /* SettingsResetProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsResetProgressButton.swift; sourceTree = "<group>"; };
 		FC78B9892C7881070044DEAE /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
 		FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCardView.swift; sourceTree = "<group>"; };
 		FC78B98E2C78A2510044DEAE /* HealthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCardView.swift; sourceTree = "<group>"; };
-		FC78B9902C78CA700044DEAE /* NewTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingView.swift; sourceTree = "<group>"; };
-		FC78B9BF2C7C88D40044DEAE /* NewTrainingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingCardView.swift; sourceTree = "<group>"; };
 		FC78B9C22C7C8D0F0044DEAE /* WinnerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WinnerData.xcdatamodel; sourceTree = "<group>"; };
 		FC78B9C52C7C8D270044DEAE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FC78B9C72C7C8E200044DEAE /* Training+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FC78B9C82C7C8E200044DEAE /* Training+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Training+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FC78B9CB2C7C8E760044DEAE /* TrainingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewModel.swift; sourceTree = "<group>"; };
+		FC78B9CB2C7C8E760044DEAE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		FC78B9D02C7CB68F0044DEAE /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FC78B9D12C7CB68F0044DEAE /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FC78B9D52C7CB6BE0044DEAE /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
-		FC78B9D72C7CB8540044DEAE /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		FC78B9D72C7CB8540044DEAE /* NewTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskSheet.swift; sourceTree = "<group>"; };
 		FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTaskRowView.swift; sourceTree = "<group>"; };
 		FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HealthData+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -141,6 +149,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC06789A2C92E7120003AA62 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FC1A1A742C7E3CD600058826 /* Splash */,
+				FC78B9742C77AF080044DEAE /* HomeScreen */,
+				FC78B9772C77AF7E0044DEAE /* MusicScreen */,
+				FC78B97A2C77AFBA0044DEAE /* HealthScreen */,
+				FC0678A32C9302270003AA62 /* SettingsScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FC0678A32C9302270003AA62 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FC0678AE2C93306C0003AA62 /* SettingsScreen.swift */,
+				FC0678B02C9331140003AA62 /* View */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		FC0678B02C9331140003AA62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC78B9832C77CAF30044DEAE /* SettingsLinkButtonView.swift */,
+				FC78B9852C77CFA80044DEAE /* SettingsResetProgressButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FC1A1A732C7E32D200058826 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B95D2C778D5F0044DEAE /* App */,
-				FC78B95E2C778D680044DEAE /* Features */,
+				FC78B95E2C778D680044DEAE /* UI */,
 				FC78B95F2C778D890044DEAE /* Utilities */,
 				FC78B9612C778DBA0044DEAE /* CoreData */,
 				FC1A1A732C7E32D200058826 /* Model */,
@@ -242,25 +280,20 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		FC78B95E2C778D680044DEAE /* Features */ = {
+		FC78B95E2C778D680044DEAE /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				FC78B9512C778D3D0044DEAE /* MainView.swift */,
-				FC1A1A742C7E3CD600058826 /* Splash */,
-				FC78B96B2C77A34B0044DEAE /* TabBar */,
-				FC78B9742C77AF080044DEAE /* HomeScreen */,
-				FC78B9772C77AF7E0044DEAE /* MusicScreen */,
-				FC78B97A2C77AFBA0044DEAE /* HealthScreen */,
-				FC78B97D2C77AFEB0044DEAE /* TrainingScreen */,
+				FC06789A2C92E7120003AA62 /* Screens */,
+				FC78B9882C7880EC0044DEAE /* Components */,
 			);
-			path = Features;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		FC78B95F2C778D890044DEAE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				FC78B9E92C7E236A0044DEAE /* Helpers */,
-				FC78B9882C7880EC0044DEAE /* Components */,
 				FC78B9662C779B240044DEAE /* Coordinator */,
 				FC78B9652C779B1C0044DEAE /* Modifiers */,
 				FC78B9642C779B120044DEAE /* Extensions */,
@@ -308,7 +341,6 @@
 			children = (
 				FC78B96C2C77A3750044DEAE /* TabBarView.swift */,
 				FC78B96E2C77A3860044DEAE /* TabBarItem.swift */,
-				FC78B9702C77A6D10044DEAE /* TabBarButton.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -317,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				FC78B9752C77AF290044DEAE /* HomeScreen.swift */,
+				FC78B9CB2C7C8E760044DEAE /* HomeViewModel.swift */,
 				FC78B9802C77C8B60044DEAE /* View */,
 			);
 			path = HomeScreen;
@@ -342,32 +375,13 @@
 			path = HealthScreen;
 			sourceTree = "<group>";
 		};
-		FC78B97D2C77AFEB0044DEAE /* TrainingScreen */ = {
-			isa = PBXGroup;
-			children = (
-				FC78B97E2C77AFF80044DEAE /* TrainingScreen.swift */,
-				FC78B9CB2C7C8E760044DEAE /* TrainingViewModel.swift */,
-				FC78B9872C787DCC0044DEAE /* View */,
-			);
-			path = TrainingScreen;
-			sourceTree = "<group>";
-		};
 		FC78B9802C77C8B60044DEAE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC78B9812C77C8CE0044DEAE /* HomeAddWorkoutView.swift */,
-				FC78B9832C77CAF30044DEAE /* HomeLinkButtonView.swift */,
-				FC78B9852C77CFA80044DEAE /* HomeResetProgressButton.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FC78B9872C787DCC0044DEAE /* View */ = {
-			isa = PBXGroup;
-			children = (
 				FC78B98B2C788B7E0044DEAE /* TrainingCardView.swift */,
-				FC78B9902C78CA700044DEAE /* NewTrainingView.swift */,
-				FC78B9BF2C7C88D40044DEAE /* NewTrainingCardView.swift */,
+				FC06789B2C92EAE40003AA62 /* HomeStaticticsCardView.swift */,
+				FC06789D2C92F9150003AA62 /* NewTrainingSheet.swift */,
+				FC06789F2C92F9420003AA62 /* EditTrainingSheet.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,9 +389,12 @@
 		FC78B9882C7880EC0044DEAE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FC78B96B2C77A34B0044DEAE /* TabBar */,
 				FC78B9892C7881070044DEAE /* NavigationTitleView.swift */,
 				FC78B9DF2C7DC7140044DEAE /* AlertView.swift */,
 				FC1A1A7B2C7F2FB400058826 /* TimePickerSheet.swift */,
+				FC0678A12C92FB5C0003AA62 /* TextFieldView.swift */,
+				FC0678A42C931B5B0003AA62 /* StaticticsInputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -386,8 +403,9 @@
 			isa = PBXGroup;
 			children = (
 				FC78B98E2C78A2510044DEAE /* HealthCardView.swift */,
-				FC78B9D72C7CB8540044DEAE /* NewTaskView.swift */,
+				FC78B9D72C7CB8540044DEAE /* NewTaskSheet.swift */,
 				FC78B9D92C7CC0900044DEAE /* HealthTaskRowView.swift */,
+				FC0678B12C9341270003AA62 /* EditTaskSheet.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +421,8 @@
 		FC78B9CF2C7CB6320044DEAE /* subclasses */ = {
 			isa = PBXGroup;
 			children = (
+				FC0678AA2C932EE50003AA62 /* GoalData+CoreDataClass.swift */,
+				FC0678AB2C932EE50003AA62 /* GoalData+CoreDataProperties.swift */,
 				FC78B9DB2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift */,
 				FC78B9DC2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift */,
 				FC78B9D02C7CB68F0044DEAE /* Task+CoreDataClass.swift */,
@@ -506,13 +526,16 @@
 			files = (
 				FC338FDA2C8B453000C1F809 /* TrackRowView.swift in Sources */,
 				FC1A1A762C7E3CF200058826 /* SplashScreen.swift in Sources */,
+				FC06789E2C92F9150003AA62 /* NewTrainingSheet.swift in Sources */,
 				FC78B9EB2C7E23750044DEAE /* RadioPlayer.swift in Sources */,
+				FC0678AC2C932EE50003AA62 /* GoalData+CoreDataClass.swift in Sources */,
 				FC78B9DA2C7CC0900044DEAE /* HealthTaskRowView.swift in Sources */,
-				FC78B9842C77CAF30044DEAE /* HomeLinkButtonView.swift in Sources */,
-				FC78B9822C77C8CE0044DEAE /* HomeAddWorkoutView.swift in Sources */,
+				FC78B9842C77CAF30044DEAE /* SettingsLinkButtonView.swift in Sources */,
 				FC338FD72C8B41FA00C1F809 /* Track.swift in Sources */,
 				FC78B9C92C7C8E200044DEAE /* Training+CoreDataClass.swift in Sources */,
+				FC0678A22C92FB5C0003AA62 /* TextFieldView.swift in Sources */,
 				FC78B9632C77943D0044DEAE /* AppCoordinator.swift in Sources */,
+				FC0678A02C92F9420003AA62 /* EditTrainingSheet.swift in Sources */,
 				FC1A1A7C2C7F2FB400058826 /* TimePickerSheet.swift in Sources */,
 				FC78B98A2C7881070044DEAE /* NavigationTitleView.swift in Sources */,
 				FC78B9C32C7C8D0F0044DEAE /* WinnerData.xcdatamodeld in Sources */,
@@ -520,29 +543,30 @@
 				FC78B96A2C77A0130044DEAE /* CornerRadius.swift in Sources */,
 				FC78B9D62C7CB6BE0044DEAE /* HealthViewModel.swift in Sources */,
 				FC338FDC2C8B498000C1F809 /* TrackScreen.swift in Sources */,
-				FC78B9862C77CFA80044DEAE /* HomeResetProgressButton.swift in Sources */,
+				FC78B9862C77CFA80044DEAE /* SettingsResetProgressButton.swift in Sources */,
 				FC78B9E22C7DD1520044DEAE /* MusicViewModel.swift in Sources */,
 				FC78B97C2C77AFD20044DEAE /* HealthScreen.swift in Sources */,
 				FC78B9D22C7CB68F0044DEAE /* Task+CoreDataClass.swift in Sources */,
 				FC78B9DD2C7CCAAE0044DEAE /* HealthData+CoreDataClass.swift in Sources */,
 				FC78B9DE2C7CCAAE0044DEAE /* HealthData+CoreDataProperties.swift in Sources */,
 				FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */,
-				FC78B9C02C7C88D40044DEAE /* NewTrainingCardView.swift in Sources */,
-				FC78B9CC2C7C8E760044DEAE /* TrainingViewModel.swift in Sources */,
+				FC78B9CC2C7C8E760044DEAE /* HomeViewModel.swift in Sources */,
+				FC0678A52C931B5C0003AA62 /* StaticticsInputView.swift in Sources */,
+				FC0678AF2C93306C0003AA62 /* SettingsScreen.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,
 				FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */,
-				FC78B9712C77A6D10044DEAE /* TabBarButton.swift in Sources */,
+				FC06789C2C92EAE40003AA62 /* HomeStaticticsCardView.swift in Sources */,
 				FC78B9762C77AF290044DEAE /* HomeScreen.swift in Sources */,
 				FC78B9D32C7CB68F0044DEAE /* Task+CoreDataProperties.swift in Sources */,
-				FC78B97F2C77AFF80044DEAE /* TrainingScreen.swift in Sources */,
 				FC78B9CA2C7C8E200044DEAE /* Training+CoreDataProperties.swift in Sources */,
 				FC78B96D2C77A3750044DEAE /* TabBarView.swift in Sources */,
+				FC0678B22C9341270003AA62 /* EditTaskSheet.swift in Sources */,
 				FC78B9732C77AAB80044DEAE /* BackgroundModifier.swift in Sources */,
 				FC78B9792C77AF900044DEAE /* MusicScreen.swift in Sources */,
-				FC78B9912C78CA700044DEAE /* NewTrainingView.swift in Sources */,
-				FC78B9D82C7CB8540044DEAE /* NewTaskView.swift in Sources */,
+				FC78B9D82C7CB8540044DEAE /* NewTaskSheet.swift in Sources */,
 				FC78B9CE2C7C90D40044DEAE /* PersistenceController.swift in Sources */,
 				FC78B9E62C7DEA5E0044DEAE /* OrientationReader.swift in Sources */,
+				FC0678AD2C932EE50003AA62 /* GoalData+CoreDataProperties.swift in Sources */,
 				FC78B9682C779B370044DEAE /* Color+extensions.swift in Sources */,
 				FC78B98F2C78A2510044DEAE /* HealthCardView.swift in Sources */,
 				FC83363A2C903CF700F3DA4C /* UIApplication+extensions.swift in Sources */,

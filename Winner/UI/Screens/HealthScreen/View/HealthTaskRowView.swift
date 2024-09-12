@@ -6,26 +6,19 @@ struct HealthTaskRowView: View {
     let task: Task
     
     var body: some View {
-        HStack(spacing: 60) {
+        VStack(alignment: .leading, spacing: 15) {
             
             Text(task.title)
                 .font(.title2)
                 .foregroundColor(.theme.text.whiteText)
-                .strikethrough(task.isCompleted ? true : false)
             
-            Spacer()
+            Divider()
+                .foregroundColor(.theme.text.grayText)
             
-            Button {
-                healthViewModel.toggleCompleted(task)
-            } label: {
-                Image(task.isCompleted
-                      ? "checkmark2"
-                      : "checkmark1"
-                )
-                    .resizable()
-                    .frame(width: 20, height: 20)
-                    .foregroundColor(.theme.text.whiteText)
-            }
+            Text(task.details)
+                .font(.footnote)
+                .foregroundColor(.theme.text.grayText)
+            
             
         }
         .padding(.vertical, 15)

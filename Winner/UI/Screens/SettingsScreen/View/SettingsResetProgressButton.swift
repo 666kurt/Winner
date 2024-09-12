@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeResetProgressButton: View {
+struct SettingsResetProgressButton: View {
     
     let action: () -> Void
     
@@ -24,6 +24,6 @@ struct HomeResetProgressButton: View {
 }
 
 #Preview {
-    HomeResetProgressButton(action: {})
+    SettingsResetProgressButton(action: {})
         .padding()
 }

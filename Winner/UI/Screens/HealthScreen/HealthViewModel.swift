@@ -4,6 +4,7 @@ import CoreData
 final class HealthViewModel: ObservableObject {
     
     @Published var title: String = ""
+    @Published var description: String = ""
     @Published var tasks: [Task] = []
     
     @Published var height: String = ""
@@ -68,23 +69,26 @@ final class HealthViewModel: ObservableObject {
     func addTask() {
         let newTask = Task(context: viewContext)
         newTask.title = title
-        newTask.isCompleted = false
+        newTask.details = description
         resetFields()
-        saveContext()
-    }
-    
-    func toggleCompleted(_ task: Task) {
-        task.isCompleted.toggle()
         saveContext()
     }
     
     private func resetFields() {
         self.title = ""
+        self.description = ""
     }
     
     func deleteAllData() {
         deleteTasks()
         deleteHealthData()
+    }
+    
+    func resetDataFields() {
+        height = ""
+        weight = ""
+        pulse = ""
+        body = ""
     }
     
     private func deleteTasks() {

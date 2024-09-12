@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeLinkButtonView: View {
+struct SettingsLinkButtonView: View {
     
     let image: String
     let title: String
@@ -30,7 +30,7 @@ struct HomeLinkButtonView: View {
 }
 
 #Preview {
-    HomeLinkButtonView(image: "list.clipboard.fill",
+    SettingsLinkButtonView(image: "list.clipboard.fill",
                        title: "Terms of use",
                        url: "https://google.com")
     .padding()

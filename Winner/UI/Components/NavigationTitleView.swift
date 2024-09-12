@@ -20,7 +20,7 @@ struct NavigationTitleView: View {
                     Button {
                         action!()
                     } label: {
-                        Image(systemName: "plus")
+                        Image(systemName: "arrow.clockwise")
                             .foregroundColor(.theme.text.whiteText)
                             .font(.title2.weight(.bold))
                     }
@@ -32,7 +32,7 @@ struct NavigationTitleView: View {
                 .foregroundColor(.theme.text.grayText)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.bottom, 24)
+        .padding(.bottom, 14)
     }
 }
 

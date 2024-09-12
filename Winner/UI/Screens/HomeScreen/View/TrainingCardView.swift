@@ -23,6 +23,9 @@ struct TrainingCardInfoView: View {
 
 struct TrainingCardView: View {
     
+    @EnvironmentObject var coordinator: AppCoordinator
+    @EnvironmentObject var homeViewModel: HomeViewModel
+    
     let training: Training
     
     var body: some View {
@@ -38,28 +41,28 @@ struct TrainingCardView: View {
                 
                 Spacer()
                 
-                ZStack {
-                    Image("circleArrow")
-                        .resizable()
-                        .frame(width: 52, height: 48)
-                    
-                    VStack {
-                        Text("\(training.timestamp)")
-                        Text("Min")
-                    }
-                    .font(.caption)
-                    .foregroundColor(.theme.text.whiteText)
-                    .padding(.leading, 4)
-                }
+                //                ZStack {
+                //                    Image("circleArrow")
+                //                        .resizable()
+                //                        .frame(width: 52, height: 48)
+                //
+                //                    VStack {
+                //                        Text("\(training.timestamp)")
+                //                        Text("Min")
+                //                    }
+                //                    .font(.caption)
+                //                    .foregroundColor(.theme.text.whiteText)
+                //                    .padding(.leading, 4)
+                //                }
             }
             
             HStack {
                 TrainingCardInfoView(title: "Approaches",
-                                     value: "44")
+                                     value: training.approaches)
                 TrainingCardInfoView(title: "Repetitions",
-                                     value: "12")
+                                     value: training.repetitions)
                 TrainingCardInfoView(title: "Weight",
-                                     value: "220")
+                                     value: training.weight)
             }
             
             Rectangle()
@@ -79,7 +82,13 @@ struct TrainingCardView: View {
         .frame(maxWidth: .infinity)
         .background(Color.theme.background.secondBackground)
         .clipShape(RoundedRectangle(cornerRadius: 20))
-        
+        .onTapGesture {
+            homeViewModel.setCurrentTraining(training)
+            coordinator.present(sheet: .editTrainig)
+        }
+        .sheet(item: $coordinator.sheet) { sheet in
+            coordinator.build(sheet: sheet)
+        }
     }
 }
 

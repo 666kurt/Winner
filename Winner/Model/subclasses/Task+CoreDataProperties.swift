@@ -9,7 +9,7 @@ extension Task {
     }
 
     @NSManaged public var title: String
-    @NSManaged public var isCompleted: Bool
+    @NSManaged public var details: String
     @NSManaged public var id: UUID?
 
 }
