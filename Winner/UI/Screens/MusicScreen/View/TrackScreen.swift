@@ -15,11 +15,11 @@ struct TrackScreen: View {
             circleView
             
             titleView
-                .padding(.top, 20)
             
             buttonView
             sliderView
             
+            Spacer()
             Spacer()
         }
         .backgroundModifier()
@@ -110,21 +110,24 @@ struct TrackScreen: View {
             Image("circle1")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 300, height: 300)
+                .frame(width: UIScreen.main.bounds.width * 0.7,
+                       height: UIScreen.main.bounds.width * 0.7)
                 .rotationEffect(.degrees(rotateCircle1 ? 360 : 0))
                 .animation(rotateCircle1 ? Animation.linear(duration: 8).repeatForever(autoreverses: true) : .default, value: rotateCircle1)
 
             Image("circle2")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 300, height: 300)
+                .frame(width: UIScreen.main.bounds.width * 0.7,
+                       height: UIScreen.main.bounds.width * 0.7)
                 .rotationEffect(.degrees(rotateCircle2 ? -360 : 0))
                 .animation(rotateCircle2 ? Animation.linear(duration: 6).repeatForever(autoreverses: true) : .default, value: rotateCircle2)
 
             Image("circle3")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 300, height: 300)
+                .frame(width: UIScreen.main.bounds.width * 0.7,
+                       height: UIScreen.main.bounds.width * 0.7)
                 .rotationEffect(.degrees(rotateCircle3 ? 360 : 0))
                 .animation(rotateCircle3 ? Animation.linear(duration: 10).repeatForever(autoreverses: true) : .default, value: rotateCircle3)
 
@@ -132,6 +135,7 @@ struct TrackScreen: View {
                 .resizable()
                 .frame(width: 64, height: 68)
                 .foregroundColor(.white)
+                .offset(y: -20)
         }
         .padding(.bottom, 30)
     }
