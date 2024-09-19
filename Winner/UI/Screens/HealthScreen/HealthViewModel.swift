@@ -104,7 +104,7 @@ final class HealthViewModel: ObservableObject {
         }
     }
     
-    private func deleteHealthData() {
+    func deleteHealthData() {
         let healthDataRequest: NSFetchRequest<NSFetchRequestResult> = HealthData.fetchRequest()
         let healthDataDeleteRequest = NSBatchDeleteRequest(fetchRequest: healthDataRequest)
         

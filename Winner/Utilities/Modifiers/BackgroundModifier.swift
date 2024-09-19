@@ -5,7 +5,7 @@ struct BackgroundModifier: ViewModifier {
     func body(content: Content) -> some View {
         
         ZStack {
-            Color.theme.background.mainBackground.ignoresSafeArea()
+            Color(hex: "#031845").ignoresSafeArea()
             
             content
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)

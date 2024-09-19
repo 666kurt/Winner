@@ -31,7 +31,7 @@ struct TabBarView: View {
         .padding(.top, 7)
         .padding(.bottom, 36)
         .padding(.horizontal, 7)
-        .background(Color(hex: "#151d2e"))
+        .background(Color(hex: "#161D2F"))
         .cornerRadius(37, corners: [.topLeft, .topRight])
         .ignoresSafeArea()
         

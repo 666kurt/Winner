@@ -16,7 +16,7 @@ struct HealthScreen: View {
                                     subtitle: "9/10 of our happiness depends on health",
                                     haveButton: true,
                                     action: {
-                    healthViewModel.resetDataFields()
+                    coordinator.toggleDataAlert()
                 })
                 
                 healthDataView
@@ -40,6 +40,12 @@ struct HealthScreen: View {
             
             if let form = coordinator.inputForm {
                 coordinator.buildInputForm(form: form, homeVM: homeViewModel, healthVM: healthViewModel)
+            }
+            
+            if coordinator.deleteDataAlert {
+                AlertView(showAlert: $coordinator.deleteDataAlert, onReset: {
+                    healthViewModel.deleteHealthData()
+                })
             }
             
         }
