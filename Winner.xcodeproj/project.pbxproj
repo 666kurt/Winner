@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC03986B2C9D72A1000E70D1 /* DataCollect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC03986A2C9D72A1000E70D1 /* DataCollect.swift */; };
 		FC06789C2C92EAE40003AA62 /* HomeStaticticsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06789B2C92EAE40003AA62 /* HomeStaticticsCardView.swift */; };
 		FC06789E2C92F9150003AA62 /* NewTrainingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06789D2C92F9150003AA62 /* NewTrainingSheet.swift */; };
 		FC0678A02C92F9420003AA62 /* EditTrainingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC06789F2C92F9420003AA62 /* EditTrainingSheet.swift */; };
@@ -72,6 +73,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC03986A2C9D72A1000E70D1 /* DataCollect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollect.swift; sourceTree = "<group>"; };
 		FC06789B2C92EAE40003AA62 /* HomeStaticticsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStaticticsCardView.swift; sourceTree = "<group>"; };
 		FC06789D2C92F9150003AA62 /* NewTrainingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainingSheet.swift; sourceTree = "<group>"; };
 		FC06789F2C92F9420003AA62 /* EditTrainingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTrainingSheet.swift; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 			children = (
 				FC78B9C12C7C8D0F0044DEAE /* WinnerData.xcdatamodeld */,
 				FC78B9CD2C7C90D40044DEAE /* PersistenceController.swift */,
+				FC03986A2C9D72A1000E70D1 /* DataCollect.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				FC78B9502C778D3D0044DEAE /* WinnerApp.swift in Sources */,
 				FC78B9CC2C7C8E760044DEAE /* HomeViewModel.swift in Sources */,
 				FC0678A52C931B5C0003AA62 /* StaticticsInputView.swift in Sources */,
+				FC03986B2C9D72A1000E70D1 /* DataCollect.swift in Sources */,
 				FC0678AF2C93306C0003AA62 /* SettingsScreen.swift in Sources */,
 				FC78B96F2C77A3860044DEAE /* TabBarItem.swift in Sources */,
 				FC78B98C2C788B7E0044DEAE /* TrainingCardView.swift in Sources */,
